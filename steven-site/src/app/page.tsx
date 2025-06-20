@@ -3,7 +3,7 @@
 import Image from "next/image";
 import BlurText from "@/components/BlurText";
 import AuroraBg from "@/components/AuroraBg";
-import Dock from "@/components/dock";
+import Dock from "@/components/Dock";
 import {VscHome, VscArchive, VscAccount, VscSettingsGear} from "react-icons/vsc";
 const handleAnimationComplete = () => {
   console.log('Animation completed!');
