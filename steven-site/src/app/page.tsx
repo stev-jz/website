@@ -9,9 +9,6 @@ const handleAnimationComplete = () => {
   console.log('Animation completed!');
 };
 
-
-
-
 export default function Home() {
     const items = [
     { icon: <VscHome size={18} />, label: 'Home', onClick: () => alert('Home!') },
@@ -21,36 +18,10 @@ export default function Home() {
   ];
   return (
     <main className="relative flex items-center justify-center h-screen overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <AuroraBg
-          colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-          blend={0.5}
-          amplitude={0.7}
-          speed={0.7}
-        />
-      </div>
-      <div className="flex items-center gap-0">
-        <BlurText
-          text="Steven Zhang"
-          delay={150}
-          animateBy="words"
-          direction="top"
-          onAnimationComplete={handleAnimationComplete}
-          className="text-6xl mb-8 font-mono"
-        />
-        <Dock 
-          items={items}
-          panelHeight={80}
-          baseItemSize={60}
-          magnification={75}/>
+      <div className="flex items-center justify-center h-screen">
+    <h1 className="text-center text-4xl font-bold">Hi, I'm Steven.</h1>
+</div>
 
-
-      </div>
-      <div className="h-screen bg-gray-100">
-
-      </div>
-        
-      
     </main>
 
   );
