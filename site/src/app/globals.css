@@ -1,4 +1,41 @@
 @import "tailwindcss";
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+/* 👇 leave the three Tailwind directives that are already there */
+@tailwind utilities;
+
+/* --- custom gradient-background animations --- */
+/* If you’re on Tailwind v3, DROP the @import and @theme lines – 
+   they’re v4-alpha syntax.  We’ll just write plain CSS instead. */
+
+:root {
+  /* turn the five CSS variables into easy-to-reuse animation shorthands */
+  --animate-first:  moveVertical   30s ease infinite;
+  --animate-second: moveInCircle   20s reverse infinite;
+  --animate-third:  moveInCircle   40s linear infinite;
+  --animate-fourth: moveHorizontal 40s ease infinite;
+  --animate-fifth:  moveInCircle   20s ease infinite;
 }
+
+/* keyframes */
+@keyframes moveHorizontal {
+  0%,100% { transform: translateX(-50%) translateY(-10%); }
+  50%     { transform: translateX( 50%) translateY( 10%); }
+}
+
+@keyframes moveInCircle {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes moveVertical {
+  0%,100% { transform: translateY(-50%); }
+  50%     { transform: translateY( 50%); }
+}
+
+/* utility classes Tailwind will pick up automatically */
+.animate-first  { animation: var(--animate-first); }
+.animate-second { animation: var(--animate-second); }
+.animate-third  { animation: var(--animate-third); }
+.animate-fourth { animation: var(--animate-fourth); }
+.animate-fifth  { animation: var(--animate-fifth); }
