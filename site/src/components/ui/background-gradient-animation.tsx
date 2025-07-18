@@ -1,16 +1,21 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
+import { useTheme } from 'next-themes';
+import { summerSkyDark, summerSkyLight } from "../theme-gradients";
 
 export const BackgroundGradientAnimation = ({
-  gradientBackgroundStart = "rgb(108, 0, 162)",
-  gradientBackgroundEnd = "rgb(0, 17, 82)",
-  firstColor = "18, 113, 255",
-  secondColor = "221, 74, 255",
-  thirdColor = "100, 220, 255",
-  fourthColor = "200, 50, 50",
-  fifthColor = "180, 180, 50",
-  pointerColor = "140, 100, 255",
+    
+    
+gradientBackgroundStart = "rgb(2, 4, 15)",
+gradientBackgroundEnd   = "rgb(15, 35, 75)",
+firstColor  = "2, 4, 15",
+secondColor = "12, 24, 45",
+thirdColor  = "30, 60, 105",
+fourthColor = "2, 4, 15",
+fifthColor  = "40, 60, 90",
+pointerColor = "40, 60, 90",
+
   size = "80%",
   blendingValue = "hard-light",
   children,
