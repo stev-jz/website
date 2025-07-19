@@ -32,11 +32,11 @@ export default function GlassContainer(props: GlassContainerProps)
 
       flex gap-10 justify-start p-6'>
       <div className=" flex gap-10 justify-start">
-        <div className="mr-8 text-sm opacity-70 text-white">
+        <div className="mr-8 text-[12.5px] tracking-tight font-[500] opacity-70 text-white">
           {props.date}
         </div>
         <div className="flex flex-col gap-5">
-          <h1 className="transition-colors duration-100 ease-out group-hover:text-blue-500 text-xl font-semibold text-white">
+          <h1 className="transition-colors duration-100 ease-out group-hover:text-blue-500 text-l text-white">
             {props.title}
             <div className="
               inline-block
@@ -55,7 +55,7 @@ export default function GlassContainer(props: GlassContainerProps)
             -&gt;
             </div>
             </h1>
-          <p className="text-gray-300 opacity-55">{props.description}</p>
+          <p className="text-[14px] text-white opacity-65">{props.description}</p>
           <ul className="flex">
             { props.tags && props.tags.map(tag => 
             <li 

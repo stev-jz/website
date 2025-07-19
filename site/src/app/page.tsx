@@ -1,7 +1,5 @@
 import Sidebar from '@/components/SideBar'
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
-import GlassContainer from '@/components/GlassContainer';
-import ExperienceSection from '@/components/sections/ExperienceSection';
 import RightPanel from '@/components/RightPanel';
 
 export default function home() {
