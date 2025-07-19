@@ -1,14 +1,13 @@
 import Sidebar from '@/components/SideBar'
-import DockBar from "@/components/DockBar";
-import { Dock, DockIcon } from "@/components/magicui/dock";
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
-
+import GlassContainer from '@/components/GlassContainer';
+import ExperienceSection from '@/components/sections/ExperienceSection';
+import RightPanel from '@/components/RightPanel';
 
 export default function home() {
   return (
-    <BackgroundGradientAnimation className="-z-999">
-      <div className = 'grid md:grid-cols-2 grid-cols-1 min-h-screen'>
-        <DockBar></DockBar>
+    <BackgroundGradientAnimation className="-z-10">
+      <div className = 'grid md:grid-cols-[7.8fr_9fr] grid-cols-1 min-h-screen'>
         {/* left panel */}
         <div className="md:sticky top-0 z-999">
           <Sidebar></Sidebar>
@@ -16,7 +15,10 @@ export default function home() {
 
 
         {/* right panel*/}
-        <div className = "overflow-y-auto h-screen">RIGHT PANEL </div>
+        <div className = "z-10 overflow-y-auto h-screen">
+          <RightPanel></RightPanel>
+
+        </div>
       </div>
     </BackgroundGradientAnimation>
   );

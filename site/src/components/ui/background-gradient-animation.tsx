@@ -5,16 +5,17 @@ import { useTheme } from 'next-themes';
 import { summerSkyDark, summerSkyLight } from "../theme-gradients";
 
 export const BackgroundGradientAnimation = ({
-    
-    
-gradientBackgroundStart = "rgb(2, 4, 15)",
-gradientBackgroundEnd   = "rgb(15, 35, 75)",
-firstColor  = "2, 4, 15",
-secondColor = "12, 24, 45",
-thirdColor  = "30, 60, 105",
-fourthColor = "2, 4, 15",
-fifthColor  = "40, 60, 90",
-pointerColor = "40, 60, 90",
+
+gradientBackgroundStart = "rgb(0, 6, 18)",
+gradientBackgroundEnd   = "rgb(12, 30, 85)",
+
+firstColor   = "0, 6, 18",
+secondColor  = "8, 18, 50",
+thirdColor   = "20, 55, 125",
+fourthColor  = "0, 6, 18",
+fifthColor   = "30, 50, 95",
+pointerColor = "30, 50, 95",
+
 
   size = "80%",
   blendingValue = "hard-light",
