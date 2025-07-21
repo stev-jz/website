@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Menu from '@/components/MenuList'
-import Iconlist from '@/components/IconList'
+import IconList from '@/components/Iconlist'
 import GlassContainer from './GlassContainer';
 
 export default function Sidebar(){
@@ -23,7 +23,7 @@ export default function Sidebar(){
                 <Menu></Menu>
                 
             </div>
-            <div className="mt-50"><Iconlist></Iconlist></div>
+            <div className="mt-50"><IconList></IconList></div>
 
         </aside>
     )

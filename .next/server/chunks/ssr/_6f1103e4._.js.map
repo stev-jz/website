@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/Steven%20Website/site/src/app/layout.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\nimport { Inter } from 'next/font/google';\nimport \"./globals.css\";\n\n\nconst inter\nexport const metadata: Metadata = {\n  title: \"Steven Zhang\",\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"en\">\n      <body className=\"antialiased\">\n        {children}\n      </body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;;AAKA,MAAM;AACC,MAAM,WAAqB;IAChC,OAAO;AACT;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGR;IACA,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;YAAK,WAAU;sBACb;;;;;;;;;;;AAIT","debugId":null}},
-    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/Steven%20Website/site/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0],"debugId":null}}]
-}

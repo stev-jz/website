@@ -1,2 +1,15 @@
 node_modules
 
+# node_modules and build folders
+site/node_modules
+site/.next
+
+# OS/system files
+.DS_Store
+
+# Logs
+*.log
+
+# Optional: environment variables and local config
+.env
+.env.local

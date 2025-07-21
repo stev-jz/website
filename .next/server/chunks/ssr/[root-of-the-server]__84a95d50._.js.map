@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/Steven%20Website/site/src/app/page.tsx"],"sourcesContent":["import Sidebar from '@/components/sidebar'\nexport default function Home() {\n  return (\n    <div className = 'grid md:grid-cols-2 grid-cols-1 min-h-screen'>\n      \n      {/* left panel */}\n      <div className=\"md:sticky top-0\">\n        <Sidebar></Sidebar>\n      </div>\n\n      {/* right panel*/}\n      <div className = \"overflow-y-auto h-screen\">RIGHT PANEL </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;;AACe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAY;;0BAGf,8OAAC;gBAAI,WAAU;0BACb,cAAA,8OAAC;;;;;;;;;;0BAIH,8OAAC;gBAAI,WAAY;0BAA2B;;;;;;;;;;;;AAGlD","debugId":null}}]
-}
