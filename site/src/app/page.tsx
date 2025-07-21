@@ -1,4 +1,4 @@
-import Sidebar from '@/components/SideBar'
+import Sidebar from '@/components/Sidebar'
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
 import GlassContainer from '@/components/GlassContainer';
 import ExperienceSection from '@/components/sections/ExperienceSection';
