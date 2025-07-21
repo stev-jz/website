@@ -6,50 +6,9 @@ export default function ExperienceSection(){
             <GlassContainer 
                 date="2024 — 2025"
                 title="Test"
-                description="blah blah blah"
-                link="https://www.skynetsystems.ca/">
-            </GlassContainer>
-            <GlassContainer 
-                date="2024 — 2025"
-                title="Test"
-                description="blah blah blah"
+                description="Work in Progress."
                 link="https://www.skynetsystems.ca/"
-                tags={["Reactjs", "TypeScript", "Python"]}>
-            </GlassContainer>
-            <GlassContainer 
-                date="2024 — 2025"
-                title="Test"
-                description="blah blah blah"
-                link="https://www.skynetsystems.ca/"
-                tags={["Reactjs", "TypeScript", "Python"]}>
-            </GlassContainer>
-            <GlassContainer 
-                date="2024 — 2025"
-                title="Test"
-                description="blah blah blah"
-                link="https://www.skynetsystems.ca/"
-                tags={["Reactjs", "TypeScript", "Python"]}>
-            </GlassContainer>
-            <GlassContainer 
-                date="2024 — 2025"
-                title="Test"
-                description="blah blah blah"
-                link="https://www.skynetsystems.ca/"
-                tags={["Reactjs", "TypeScript", "Python"]}>
-            </GlassContainer>
-            <GlassContainer 
-                date="2024 — 2025"
-                title="Test"
-                description="blah blah blah"
-                link="https://www.skynetsystems.ca/"
-                tags={["Reactjs", "TypeScript", "Python"]}>
-            </GlassContainer>
-            <GlassContainer 
-                date="2024 — 2025"
-                title="Test"
-                description="blah blah blah"
-                link="https://www.skynetsystems.ca/"
-                tags={["Reactjs", "TypeScript", "Python"]}>
+                tags={["Reactjs", "TypeScript", "Next", "Tailwind", "CSS"]}>
             </GlassContainer>
 
 
