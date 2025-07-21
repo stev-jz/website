@@ -1,0 +1,9 @@
+/* [project]/src/components/ui/GlassContainer.css [app-client] (css) */
+.glass-con.glass-container {
+  -webkit-backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, .07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+}
+
+/*# sourceMappingURL=src_components_ui_GlassContainer_b3803f11.css.map*/

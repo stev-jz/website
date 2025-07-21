@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/Steven%20Website/site/src/components/sidebar.tsx"],"sourcesContent":["import Link from 'next/link';\r\nimport Menu from '@/components/menu'\r\n\r\nexport default function Sidebar(){\r\n    return(\r\n        <aside>\r\n            <Link href = '/' className=\"text-3xl font-bold tracking-tight\">\r\n            Steven Zhang\r\n            </Link>\r\n            <Menu></Menu>\r\n\r\n        </aside>\r\n    )\r\n}"],"names":[],"mappings":";;;;AAAA;;;;;;;;;AAGe,SAAS;IACpB,qBACI,8OAAC;;0BACG,8OAAC,4JAAA,CAAA,UAAI;gBAAC,MAAO;gBAAI,WAAU;0BAAoC;;;;;;0BAG/D,8OAAC;;;;;;;;;;;AAIb","debugId":null}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/Steven%20Website/site/src/app/page.tsx"],"sourcesContent":["import Sidebar from '@/components/sidebar'\nexport default function Home() {\n  return (\n    <div className = 'grid md:grid-cols-2 grid-cols-1 min-h-screen'>\n      \n      {/* left panel */}\n      <div className=\"sticky top-0\">\n        <Sidebar></Sidebar>\n      </div>\n\n      {/* right panel*/}\n      <div className = \"overflow-y-auto h-screen\">RIGHT PANEL </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AACe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAY;;0BAGf,8OAAC;gBAAI,WAAU;0BACb,cAAA,8OAAC,6HAAA,CAAA,UAAO;;;;;;;;;;0BAIV,8OAAC;gBAAI,WAAY;0BAA2B;;;;;;;;;;;;AAGlD","debugId":null}}]
+}
