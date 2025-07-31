@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Steven Zhang",
+  title: "Steven | Developer",
 };
 
 export default function RootLayout({
@@ -19,7 +19,12 @@ export default function RootLayout({
         <link rel="icon" href="/s logo.png" type="image/png" />
       </head>
       <body className={inter.className}>
-        {children}
+        <div className="bg-[url('/toronto-skyline.png')] bg-center h-screen w-full -z-10">
+          <div className="z-10">{children} </div>
+        </div>
+        
+        
+        
       </body>
     </html>
   );

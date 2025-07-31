@@ -19,7 +19,7 @@ export default function GlassContainer(props: GlassContainerProps)
       group
       mb-3
       opacity-50
-      rounded-[9] 
+      rounded-[10] 
       transition duration-100 ease-in-out
       border-t border-t-transparent
 
@@ -36,7 +36,7 @@ export default function GlassContainer(props: GlassContainerProps)
           {props.date}
         </div>
         <div className="flex flex-col gap-5">
-          <h1 className="transition-colors duration-100 ease-out group-hover:text-blue-500 text-xl font-semibold text-white">
+          <h1 className="transition-colors duration-100 ease-out group-hover:text-blue-600 text-xl font-semibold text-white">
             {props.title}
             <div className="
               inline-block
