@@ -22,7 +22,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
       <body
         className={`
           ${inter.className}
-          bg-[url('/van-skyline-2.png')]
+          bg-[url('/van-skyline.png')]
           dark:bg-[url('/toronto-skyline.png')]
           bg-center
           h-screen
