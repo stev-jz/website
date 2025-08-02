@@ -15,28 +15,36 @@ export default function GlassContainer(props: GlassContainerProps)
   return (
     <Link href={props.link} target="_blank"
       className='
-      max-w-168
+      w-[45vw]
       group
       mb-3
-      opacity-50
-      rounded-[10] 
-      transition duration-100 ease-in-out
-      border-t border-t-transparent
+      rounded-[15] 
+      transition duration-300 ease-in-out
 
-      hover:bg-white/6
+      border-t dark:border-t-white/20 border-t-white/40
+      dark:bg-white/4
+      bg-gray-600/15
+      backdrop-blur-md
+      shadow-[0_10px_20px_rgba(0,0,0,0.25)]
+    
+
+      dark:hover:bg-white/8
+      hover:bg-gray-600/15
       hover:opacity-200
-      hover:shadow-[0_10px_20px_rgba(0,0,0,0.05)]
-      hover:backdrop-blur-md
-      hover:border-t
-      hover:border-t-white/30
+      dark:hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)]
+      hover:shadow-[0_10px_20px_rgba(0,0,0,0.35)]
+      dark:hover:backdrop-blur-md
+      hover:backdrop-blur-lg
+      hover:border-t-white-45
+      dark:hover:border-t-white/35
 
       flex gap-10 justify-start p-6'>
       <div className=" flex gap-10 justify-start">
-        <div className="mr-8 text-sm opacity-70 text-white">
+        <div className="mr-8 text-sm opacity-70 text-black dark:text-white">
           {props.date}
         </div>
         <div className="flex flex-col gap-5">
-          <h1 className="transition-colors duration-100 ease-out group-hover:text-blue-600 text-xl font-semibold text-white">
+          <h1 className="transition-colors duration-100 ease-out dark:group-hover:text-blue-600 group-hover:text-blue-800 text-xl font-semibold text-black dark:text-white">
             {props.title}
             <div className="
               inline-block
@@ -48,14 +56,15 @@ export default function GlassContainer(props: GlassContainerProps)
               group-hover:opacity-90
               group-hover:translate-x-1
               group-hover:-translate-y-1
-              group-hover:text-blue-500
+              group-hover:text-blue-800
+              dark:group-hover:text-blue-500
               font-medium
               ml-1.5
             ">
             -&gt;
             </div>
             </h1>
-          <p className="text-gray-300 opacity-55">{props.description}</p>
+          <p className="dark:text-gray-300 text-black opacity-55">{props.description}</p>
           <ul className="flex">
             { props.tags && props.tags.map(tag => 
             <li 
