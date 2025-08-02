@@ -3,22 +3,41 @@ import { BackgroundGradientAnimation } from '@/components/ui/background-gradient
 import GlassContainer from '@/components/GlassContainer';
 import ExperienceSection from '@/app/Experience/page';
 import Image from 'next/image';
-import RightPanel from '@/components/RightPanel';
 
 export default function home() {
   return (
-    <div className = 'grid md:grid-cols-[7.8fr_9fr] grid-cols-1 min-h-screen'>
-      {/* left panel */}
-      <div className="md:sticky top-0 z-999">
-        <Sidebar></Sidebar>
-      </div>
-
-
-      {/* right panel*/}
-      <div className = "z-10 overflow-y-auto h-screen">
-        <RightPanel></RightPanel>
-
-      </div>
+    <div className="mt-[9vw]">
+      <GlassContainer 
+        date="2024 — 2025"
+        title="About"
+        description="Work in Progress."
+        link="https://www.google.com/"/>
+        <GlassContainer 
+        date="2024 — 2025"
+        title="About"
+        description="Work in Progress."
+        link="https://www.google.com/"/>
+        <GlassContainer 
+        date="2024 — 2025"
+        title="About"
+        description="Work in Progress."
+        link="https://www.google.com/"/>
+        <GlassContainer 
+        date="2024 — 2025"
+        title="About"
+        description="Work in Progress."
+        link="https://www.google.com/"/><GlassContainer 
+        date="2024 — 2025"
+        title="About"
+        description="Work in Progress."
+        link="https://www.google.com/"/>
+        <GlassContainer 
+        date="2024 — 2025"
+        title="About"
+        description="Work in Progress."
+        link="https://www.google.com/"/>
+        
+      
     </div>
   );
 }
