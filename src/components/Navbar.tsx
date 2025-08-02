@@ -33,7 +33,7 @@ export default function Navbar(){
                 <Link href='/'>
                     <Image src="/s logo.png" alt="Home" width={40} height={40}/>
                 </Link>
-                <Link href="/">About</Link>
+                <Link href="/">Home</Link>
                 <Link href="/Experience">Experience</Link>
                 <Link href="/Projects">Projects</Link>
                 <ThemeToggle></ThemeToggle>

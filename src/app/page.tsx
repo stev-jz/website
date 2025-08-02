@@ -1,7 +1,7 @@
 import Sidebar from '@/components/Sidebar'
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
 import GlassContainer from '@/components/GlassContainer';
-import ExperienceSection from '@/app/Experience/page';
+import ExperienceSection from '@/app/experience/page';
 import Image from 'next/image';
 
 export default function home() {
@@ -36,7 +36,7 @@ export default function home() {
         title="About"
         description="Work in Progress."
         link="https://www.google.com/"/>
-        
+
       
     </div>
   );
