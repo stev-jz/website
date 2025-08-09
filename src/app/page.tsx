@@ -40,39 +40,19 @@ export default function Home() {
       <div style = {{ width: `${leftWidth}%`}} className="overflow-hidden select-none transiton-all duration-75">
         <Sidebar/>
       </div>
-<div
-  className="
-    relative group
-    self-center
-    hidden md:block
-    h-[80%]
-  "
-  role="separator"
-  aria-orientation="vertical"
->
-  {/* Functional, invisible hit zone */}
-  <div
-    className="
-      absolute top-0 left-1/2 -translate-x-1/2
-      w-6 h-full
-      cursor-ew-resize
-      bg-transparent
-    "
-    onMouseDown={handleMouseDown}
-  />
 
-  {/* Decorative visible bar */}
-  <div
-    className="
-      relative
-      md:w-[3px] h-full rounded-full
-      transition-colors
-      dark:bg-gray-500 bg-gray-600/40
-      group-hover:bg-gray-800/60 dark:group-hover:bg-gray-300
-    "
-  />
-</div>
-  
+      <div onMouseDown={handleMouseDown} className="
+        self-center
+        z-50 
+        md:w-[3px]
+        h-[80%]
+        transition-all duration-250
+        rounded-full
+        hidden md:block 
+        select-none 
+        dark:bg-gray-500 bg-gray-600/40 hover:bg-gray-800/60 dark:hover:bg-gray-300
+        cursor-ew-resize">
+      </div>
 
       <div draggable={false} className="overflow-auto flex-1 select-none">
         <RightPanel/>
