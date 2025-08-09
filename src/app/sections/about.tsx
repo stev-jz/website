@@ -8,9 +8,9 @@ export default function About(){
             </div>
             <div className="flex-1 flex items-center justify-end w-[clamp(22vw,44cqw,33vw)]">
                 <p className="tracking-tighter ml-[2vw] text-[clamp(0.8vw,2.5cqw,1.3vw)] opacity-70 text-center">
-                    I'm a computer engineering student at the University of Toronto and originally from Vancouver. 
+                    I&apos;m a computer engineering student at the University of Toronto and originally from Vancouver. 
                     I like building full-stack apps, websites, and other tools for my personal use. Currently, I am a frontend developer 
-                    for EWB, UofT Chapter and a SWE Intern at Skynet Systems Ltd. When I'm not coding, 
+                    for EWB, UofT Chapter and a SWE Intern at Skynet Systems Ltd. When I&apos;m not coding, 
                     I like to stay physcially active! Playing basketball, hiking trails, and going gymming are my hobbies.
                 </p>
                 
