@@ -22,7 +22,7 @@ export default function Home() {
       const deltaX = currentX - startXRef.current
       const deltaPct = (deltaX/window.innerWidth) * 100
       const newWidth = startWidthRef.current + deltaPct;
-      setLeftWidth(Math.min(53, Math.max(35, newWidth)));
+      setLeftWidth(Math.min(53, Math.max(37, newWidth)));
 
     }
     const onMouseUp = () => {
@@ -40,15 +40,39 @@ export default function Home() {
       <div style = {{ width: `${leftWidth}%`}} className="overflow-hidden select-none transiton-all duration-75">
         <Sidebar/>
       </div>
+<div
+  className="
+    relative group
+    self-center
+    hidden md:block
+    h-[80%]
+  "
+  role="separator"
+  aria-orientation="vertical"
+>
+  {/* Functional, invisible hit zone */}
+  <div
+    className="
+      absolute top-0 left-1/2 -translate-x-1/2
+      w-6 h-full
+      cursor-ew-resize
+      bg-transparent
+    "
+    onMouseDown={handleMouseDown}
+  />
 
-      <div onMouseDown={handleMouseDown} className="
-        z-50 
-        w-[4px] md:w-[4px] 
-        transition-opacity duration-150 opacity-50 hover:opacity-100 
-        hidden md:block 
-        select-none 
-        bg-gray-300 cursor-ew-resize">
-      </div>
+  {/* Decorative visible bar */}
+  <div
+    className="
+      relative
+      md:w-[3px] h-full rounded-full
+      transition-colors
+      dark:bg-gray-500 bg-gray-600/40
+      group-hover:bg-gray-800/60 dark:group-hover:bg-gray-300
+    "
+  />
+</div>
+  
 
       <div draggable={false} className="overflow-auto flex-1 select-none">
         <RightPanel/>

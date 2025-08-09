@@ -7,7 +7,9 @@
 /* --- custom gradient-background animations --- */
 /* If you’re on Tailwind v3, DROP the @import and @theme lines – 
    they’re v4-alpha syntax.  We’ll just write plain CSS instead. */
-
+.container-type-inline {
+  container-type: inline-size;
+} 
 :root {
   /* turn the five CSS variables into easy-to-reuse animation shorthands */
   --animate-first:  moveVertical   30s ease infinite;

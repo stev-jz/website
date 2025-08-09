@@ -2,7 +2,7 @@ import GlassContainer from "@/components/GlassContainer"
 
 export default function Experience(){
     return(
-        <section id="experience" className="w-full">
+        <section id="experience" className="pt-[10vh] w-full">
             <GlassContainer 
                 date="2024 — 2025"
                 title="Test"

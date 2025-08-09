@@ -1,9 +1,10 @@
+
 import type { Metadata } from "next";
 import { Inter } from 'next/font/google';
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import ThemeProvider from "@/theme/theme-provider";
-import Navbar from "@/components/Navbar";
+import ThemeToggle from "@/theme/theme-toggle";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -35,11 +36,8 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         {/* CONTENT */}
         
         <ThemeProvider>
-          <Navbar></Navbar>
-            <div className="flex">
-                <Sidebar/>
-                <div className="relative left-1/2">{children}</div>
-            </div>
+          {children}
+          <div className="fixed right-20 top-7.5"><ThemeToggle/></div>
         </ThemeProvider>
       </body>
     </html>

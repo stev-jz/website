@@ -20,31 +20,30 @@ export default function ThemeToggle(){
         <button
             onClick={() => setTheme(isDark ? "light" :"dark")}
             className="
-                w-[12vw]
-                h-[2vw]
+                py-3
                 cursor-pointer
                 items-center
-                font-medium
+                text-4xl
                 rounded-[15] 
                 transition-all duration-300 ease-in-out
-                border-t border-t-transparent
-                dark:bg-white/5
-                bg-[rgba(220,220,220,0.1)]
+                border-t border-t-white/50
                 backdrop-blur-xl
 
-                shadow-[inset_0_0_0.5px_rgba(255,255,255,0.2),0_2px_10px_rgba(0,0,0,0.05)]
+                shadow-[inset_0_0_0.5px_rgba(255,255,255,0.4),0_2px_10px_rgba(0,0,0,0.05)]
                 
                 
+                bg-white/13
                 hover:bg-white/20
-                dark:hover:bg-white/6
+                dark:bg-white/5
+                dark:hover:bg-white/7
                 hover:opacity-200
-                hover:shadow-[inset_0_0_0.5px_rgba(255,255,255,0.3),0_4px_14px_rgba(0,0,0,0.08)]
+                hover:shadow-[inset_0_0_0.5px_rgba(255,255,255,0.45),0_4px_14px_rgba(0,0,0,0.08)]
                 hover:backdrop-blur-lg
                 hover:border-t
-                hover:border-t-white/30
+                dark:border-t-white/30
 
                 flex gap-10 justify-start p-6">
-                {isDark ? "☀ Vancouver" : "⏾ Toronto"}
+                {isDark ? "☀" : "⏾"}
             </button>
     );
 }
