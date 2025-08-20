@@ -16,7 +16,7 @@ export default function ProjectContainer(props: ProjectContainerProps)
   return (
     <Link href={props.link} target="_blank"
       className='
-      w-[20vw]
+      w-full
       group
       mb-3
       rounded-[15] 
@@ -39,7 +39,7 @@ export default function ProjectContainer(props: ProjectContainerProps)
 
       flex flex-col p-6'>
         {props.projectImage}
-        <div className="flex flex-col gap-y-5">
+        <div className="flex flex-col gap-y-5 mt-4">
           <h1 className="
             transition-colors duration-100 ease-out 
             dark:group-hover:text-blue-600 
@@ -64,11 +64,11 @@ export default function ProjectContainer(props: ProjectContainerProps)
             </div>
             </h1>
           <p className="dark:text-gray-300 text-black opacity-55">{props.description}</p>
-          <ul className="flex">
+          <ul className="flex flex-wrap gap-2">
             { props.tags && props.tags.map(tag => 
             <li 
             key={ tag }
-            className="mr-1.5 inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-blue-950 text-blue-500">
+            className="inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-blue-950 text-blue-500 whitespace-nowrap">
               {tag}</li>)}
           </ul>
         </div>
