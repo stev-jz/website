@@ -1,6 +1,9 @@
+import TechStack from "@/components/TechStack";
+
 export default function About(){
     return(
-        <section id="about" className="pt-[10vw] container-type-inline flex">
+        <>
+        <section id="about" className="pt-[9vw] container-type-inline flex">
             <div className="rounded-full size-[clamp(10vw,20cqw,30vw)] flex items-center justify-center 
                 border-t dark:border-t-white/30 border-t-white/50 dark:bg-white/4 bg-gray-600/15
                 backdrop-blur-md shadow-[0_10px_20px_rgba(0,0,0,0.35)]">
@@ -16,5 +19,22 @@ export default function About(){
                 
             </div>
         </section>
+        <div className="container-type-inline mx-auto mt-[2vw] dark:h-[1.5px] h-[2px] bg-gradient-to-r from-transparent via-gray-700/30 dark:via-white/25 to-transparent" />
+    <div className="flex flex-col items-center mt-[30vh]">
+      <p className="dark:text-white/70 text-gray-900/60 text-xl tracking-tight mb-2">See more...</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="size-[8vh] dark:text-white/70 text-gray-900/60 animate-bounce"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={1}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+
+      </>
+        
     );
 }

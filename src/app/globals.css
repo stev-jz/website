@@ -36,6 +36,7 @@
   50%     { transform: translateY( 50%); }
 }
 
+
 /* utility classes Tailwind will pick up automatically */
 .animate-first  { animation: var(--animate-first); }
 .animate-second { animation: var(--animate-second); }

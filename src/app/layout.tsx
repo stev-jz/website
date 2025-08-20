@@ -37,7 +37,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         
         <ThemeProvider>
           {children}
-          <div className="fixed right-20 top-7.5"><ThemeToggle/></div>
+          <div className="fixed right-20 top-7.5 z-50"><ThemeToggle/></div>
         </ThemeProvider>
       </body>
     </html>
