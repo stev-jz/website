@@ -43,15 +43,19 @@ export default function Home() {
 
       <div onMouseDown={handleMouseDown} className="
         self-center
-        z-50 
-        md:w-[3px]
+        group
+        z-50
+        md:w-[5px]
+        px-8
         h-[80%]
-        transition-all duration-250
+        transition-all duration-300
         rounded-full
-        hidden md:block 
+        hidden md:block
+        bg-transparent
         select-none 
-        dark:bg-gray-500 bg-gray-600/40 hover:bg-gray-800/60 dark:hover:bg-gray-300
         cursor-ew-resize">
+        <div className='w-[4px] group-hover:w-[5px] h-full z-60 rounded-full select-none 
+        cursor-ew-resize transition-all duration-300 dark:bg-gray-500 bg-gray-600/40 group-hover:bg-gray-800/60 dark:group-hover:bg-gray-300'></div>
       </div>
 
       <div draggable={false} className="overflow-auto flex-1 select-none">
