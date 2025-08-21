@@ -1,6 +1,7 @@
 import Experience from "@/app/sections/experience";
 import About from "@/app/sections/about";
 import Projects from "@/app/sections/projects";
+import Link from "next/link";
 
 
 export default function RightPanel(){
