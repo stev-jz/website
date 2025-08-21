@@ -19,7 +19,7 @@ export default function GlassContainer(props: GlassContainerProps)
         className='
         group
         pt-3
-        pb-3.5
+        pb-[2vh]
         w-full
         flex px-[clamp(1rem,3vw,2.5rem)] gap-[clamp(1rem,3vw,2.5rem)]
 
