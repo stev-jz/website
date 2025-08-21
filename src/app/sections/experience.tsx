@@ -1,37 +1,32 @@
 import GlassContainer from "@/components/GlassContainer"
+import Link from "next/link"
 
 export default function Experience(){
     return(
-        <section id="experience" className="pt-[10vh] w-full relative">
-            {/* Vertical connecting line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-[20vh] bottom-[10vh] w-[3px] bg-gradient-to-b from-transparent via-white/50 to-transparent dark:via-white/35 z-0"></div>
-            
-            <div className="relative z-10">
+        <section id="experience" className="pt-[10vh] w-full relative space-y-4">
                 <GlassContainer 
-                    date="2024 — 2025"
-                    title="Software Engineering Intern - Skynet Systems"
+                    date="MAY — AUG 2025"
+                    title="Software Engineering Intern ‧ Skynet Systems"
                     description="Work in Progress."
-                    link="https://www.google.com/"
-                    tags={["React", "TypeScript", "Next.js", "Tailwind", "CSS"]}
-                    projectImage={<img src="/skynetlogo.png" width={75} alt="Skynet logo"/>}>
+                    link="https://www.skynetsystems.ca/"
+                    projectImage={<img src="/skynetlogo.png" className="size-full" alt="Skynet logo"/>}>
                 </GlassContainer>
                 <GlassContainer 
-                    date="2024 — 2025"
-                    title="Front end developer - EWB UofT Chapter"
+                    date="JULY 2025 — PRESENT"
+                    title="Front End Developer ‧ EWB UofT"
                     description="Work in Progress."
-                    link="https://www.google.com/"
-                    tags={["React", "TypeScript", "Next.js", "Tailwind", "CSS"]}
-                    projectImage={<img className="rounded-md" src="/EWB-logo.png" width={75} alt="EWB logo"/>}>
+                    link="https://uoft.ewb.ca/"
+                    tags={["TypeScript", "Next.js", "React", "Tailwind CSS", "HTML (JSX)"]}
+                    projectImage={<img className="rounded-md size-full" src="/EWB-logo.png" alt="EWB logo"/>}>
                 </GlassContainer>
                 <GlassContainer 
-                    date="2024 — 2025"
-                    title="Intro ML Instructor - UBC Geering Up Camps"
-                    description="Work in Progress."
-                    link="https://www.google.com/"
-                    tags={["React", "TypeScript", "Next.js", "Tailwind", "CSS"]}
-                    projectImage={<img src="/Geering-up-logo.png" width={75} alt="Geering Up logo"/>}>
+                    date="JULY — AUG 2023"
+                    title="ML Instructor ‧ UBC Geering Up"
+                    description="Junior Instructor for UBC Geering Up&apos;s Intro to Machine Learning camp, where I taught 30+ campers the fundamentals of training datasets and building simple models. Guided them through a project using Pokémon images as training data to introduce core ML concepts."
+                    link="https://geeringup.apsc.ubc.ca/"
+                    tags={["Python", "NumPy", "Pandas", "Git", "GitHub"]}
+                    projectImage={<img src="/Geering-up-logo.png" className=" size-full rounded-full" alt="Geering Up logo"/>}>
                 </GlassContainer>
-            </div>
         </section>
     )
 }
