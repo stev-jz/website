@@ -28,7 +28,7 @@ useEffect(() => {
       const visible = entries
         .filter(e => e.isIntersecting)
         .sort((a, b) => (b.intersectionRatio ?? 0) - (a.intersectionRatio ?? 0))[0];
-      if (visible?.target?.id) setActive(visible.target.id as any);
+      if (visible?.target?.id) setActive(visible.target.id as Item["id"]);
     },
     {
       // use viewport as root (no `root` passed)
