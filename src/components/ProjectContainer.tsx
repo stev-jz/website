@@ -19,34 +19,34 @@ export default function ProjectContainer(props: ProjectContainerProps)
       w-full
       group
       mb-3
-      rounded-[15] 
-      transition duration-300 ease-in-out
-
-      border-t dark:border-t-white/20 border-t-white/40
-      dark:bg-white/4
-      bg-gray-600/15
-      backdrop-blur-md
-      shadow-[0_10px_20px_rgba(0,0,0,0.25)]
-      dark:hover:bg-white/8
-      hover:bg-gray-600/15
-      hover:opacity-200
-      dark:hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)]
-      hover:shadow-[0_10px_20px_rgba(0,0,0,0.35)]
-      dark:hover:backdrop-blur-md
-      hover:backdrop-blur-lg
-      hover:border-t-white-45
-      dark:hover:border-t-white/35
+        rounded-[15]
+        transition duration-300 ease-in-out
+        border-t dark:border-t-white/20 border-t-white/40
+        dark:bg-white/4
+        bg-gray-400/15
+        backdrop-blur-xl
+        shadow-[0_10px_20px_rgba(0,0,0,0.25)]
+        dark:hover:bg-white/8
+        hover:bg-white/17
+        hover:opacity-200
+        dark:hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)]
+        hover:shadow-[0_10px_20px_rgba(0,0,0,0.35)]
+        dark:hover:backdrop-blur-md
+        hover:backdrop-blur-2xl
+        hover:border-t-white-45
+        dark:hover:border-t-white/35
 
       flex flex-col p-6'>
-        {props.projectImage}
+        <div className="flex justify-center items-center">
+          {props.projectImage}
+        </div>
         <div className="flex flex-col gap-y-5 mt-4">
           <h1 className="
             transition-colors duration-100 ease-out 
             dark:group-hover:text-blue-600 
             group-hover:text-blue-800 
             text-xl font-semibold text-black dark:text-white">
-            {props.title}
-            <div className="
+            {props.title} <span className="
               inline-block
               transform
               transition-all duration-200 ease-out
@@ -61,9 +61,9 @@ export default function ProjectContainer(props: ProjectContainerProps)
               font-medium
             ">
             -&gt;
-            </div>
+            </span>
             </h1>
-          <p className="dark:text-gray-300 text-black opacity-55">{props.description}</p>
+          <p className="dark:text-gray-300 text-black text-[clamp(0.7vh,2cqw,2vh)] opacity-55">{props.description}</p>
           <ul className="flex flex-wrap gap-2">
             { props.tags && props.tags.map(tag => 
             <li 
