@@ -16,7 +16,7 @@ export default function Projects(){
             </div>
 
             {/*the footer */}
-            <div className=" pl-5 mt-40 mb-15 text-left text-black/60 dark:text-gray-400">
+            <div className=" pl-5 mt-40 mb-10 text-left text-black/60 dark:text-gray-400">
                 <p className=" tracking-tight font-light text-[2.1vh] leading-relaxed w-[70%] ">
                     Designed and coded in{' '}
                     <TechUsed href="https://code.visualstudio.com/">
