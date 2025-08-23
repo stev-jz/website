@@ -18,7 +18,7 @@ export default function Projects(){
             {/*the footer */}
             <div className="lg:pl-3 max-lg:px-4 mt-40 mb-10 text-left text-black/60 dark:text-gray-400">
                 <p className=" tracking-tight font-light lg:text-[2.1vh] max-lg:text-[3.2vw] leading-relaxed lg:w-[70%] max-lg:w-full ">
-                    Coded and designed in{' '}
+                    Developed and designed in{' '}
                     <TechUsed href="https://code.visualstudio.com/">
                     Visual Studio Code
                     </TechUsed>
