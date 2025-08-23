@@ -13,11 +13,9 @@ export const metadata: Metadata = {
   title: "Steven | Developer",
 };
 
-export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-
-      {/* logo and stuff */}
       <head>
         <link rel="icon" href="/s logo.png" type="image/png" />
         <link rel="preload" href="/pfp.png" as="image" type="image/png" />
@@ -25,28 +23,41 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         <link rel="preload" href="/van-skyline.png" as="image" type="image/png" media="(prefers-color-scheme: light)" />
         <link rel="preload" href="/toronto-skyline.png" as="image" type="image/png" media="(prefers-color-scheme: dark)" />
       </head>
+
       <body
         className={`
           ${inter.className}
-          bg-[url('/van-skyline.png')]
-          dark:bg-[url('/toronto-skyline.png')]
-          bg-center
-          bg-no-repeat-y
-          h-screen
-          bg-fixed
+          relative
+          min-h-[100dvh]   /* better mobile vh */
           w-full
-          -z-10
+          overflow-x-hidden
         `}
       >
+        {/* FIXED background layer (works on iOS/Android) */}
+        <div
+          aria-hidden="true"
+          className={`
+            pointer-events-none
+            fixed inset-0 -z-10
+            bg-center
+            bg-repeat-x         /* repeat horizontally only */
+            bg-no-repeat        /* prevent vertical repeat */
+            bg-[length:70%_auto]
+            bg-[url('/van-skyline.png')]
+            dark:bg-[url('/toronto-skyline.png')]
+          `}
+        />
 
         {/* CONTENT */}
-        
         <ThemeProvider>
-          <Navbar/>
+          <Navbar />
           {children}
-          <div className="fixed right-20 top-7.5 z-50 hidden lg:block"><ThemeToggle/></div>
+          <div className="fixed right-20 top-7.5 z-50 hidden lg:block">
+            <ThemeToggle />
+          </div>
         </ThemeProvider>
       </body>
     </html>
   );
 }
+
