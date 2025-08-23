@@ -13,7 +13,7 @@ export default function Experience(){
                 </GlassContainer>
                 <GlassContainer 
                     date="JULY 2025 — PRESENT"
-                    title="Front End Developer ‧ EWB UofT"
+                    title="Frontend Developer ‧ EWB UofT"
                     description="Work in Progress."
                     link="https://uoft.ewb.ca/"
                     tags={["TypeScript", "Next.js", "React", "Tailwind CSS", "HTML (JSX)"]}
