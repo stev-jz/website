@@ -4,6 +4,22 @@
 /* 👇 leave the three Tailwind directives that are already there */
 @tailwind utilities;
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font display optimization */
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+}
+
+/* Prevent layout shift during font load */
+body {
+  font-display: swap;
+}
+
 /* --- custom gradient-background animations --- */
 /* If you’re on Tailwind v3, DROP the @import and @theme lines – 
    they’re v4-alpha syntax.  We’ll just write plain CSS instead. */

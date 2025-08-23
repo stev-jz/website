@@ -5,6 +5,7 @@ import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import ThemeProvider from "@/theme/theme-provider";
 import ThemeToggle from "@/theme/theme-toggle";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,6 +20,10 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
       {/* logo and stuff */}
       <head>
         <link rel="icon" href="/s logo.png" type="image/png" />
+        <link rel="preload" href="/pfp.png" as="image" type="image/png" />
+        <link rel="preload" href="/s logo.png" as="image" type="image/png" />
+        <link rel="preload" href="/van-skyline.png" as="image" type="image/png" media="(prefers-color-scheme: light)" />
+        <link rel="preload" href="/toronto-skyline.png" as="image" type="image/png" media="(prefers-color-scheme: dark)" />
       </head>
       <body
         className={`
@@ -36,8 +41,9 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         {/* CONTENT */}
         
         <ThemeProvider>
+          <Navbar/>
           {children}
-          <div className="fixed right-20 top-7.5 z-50"><ThemeToggle/></div>
+          <div className="fixed right-20 top-7.5 z-50 hidden lg:block"><ThemeToggle/></div>
         </ThemeProvider>
       </body>
     </html>
