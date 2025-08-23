@@ -40,8 +40,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             pointer-events-none
             fixed inset-0 -z-10
             bg-center
-            bg-repeat-x         /* repeat horizontally only */
-            bg-no-repeat        /* prevent vertical repeat */
+            bg-repeat-x
+            max-lg:bg-no-repeat-y
             bg-[length:70%_auto]
             bg-[url('/van-skyline.png')]
             dark:bg-[url('/toronto-skyline.png')]
