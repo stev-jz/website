@@ -3,64 +3,67 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
-export default function ThemeToggle(){
-    const { theme, setTheme } = useTheme();
-    const [mounted, setMounted] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
+export default function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   useEffect(() => {
-    const rightPanel = document.getElementById('right-panel');
+    const rightPanel = document.getElementById("right-panel");
     if (!rightPanel) return;
 
     const handleScroll = () => {
       setIsScrolled(rightPanel.scrollTop > 10);
     };
 
-    rightPanel.addEventListener('scroll', handleScroll);
-    return () => rightPanel.removeEventListener('scroll', handleScroll);
+    rightPanel.addEventListener("scroll", handleScroll);
+    return () => rightPanel.removeEventListener("scroll", handleScroll);
   }, [mounted]);
 
-  if (!mounted) return null; 
+  if (!mounted) return null;
 
-    
-    const isDark = theme === "dark";
-    
-    return(
-        <button
-            onClick={() => setTheme(isDark ? "light" :"dark")}
-            className={`
-                py-3
-                cursor-pointer
-                items-center
-                text-4xl
-                rounded-[15] 
-                transition-all duration-300 ease-in-out
-                border-t border-t-white/50
-                backdrop-blur-xl
+  const isDark = theme === "dark";
 
-                shadow-[inset_0_0_0.5px_rgba(255,255,255,0.4),0_2px_10px_rgba(0,0,0,0.05)]
-                
-                
-                bg-white/13
-                hover:bg-white/20
-                dark:bg-white/5
-                dark:hover:bg-white/7
-                hover:opacity-100
-                hover:shadow-[inset_0_0_0.5px_rgba(255,255,255,0.45),0_4px_14px_rgba(0,0,0,0.08)]
-                hover:backdrop-blur-lg
-                hover:border-t
-                dark:border-t-white/30
-
-                flex gap-10 justify-start p-6
-                
-                ${isScrolled ? 'opacity-60 hover:opacity-100' : 'opacity-100'}
-            `}>
-                {isDark ? "☀" : "⏾"}
-            </button>
-    );
+  return (
+    <button
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      className={`
+        cursor-pointer
+        transition-all duration-300 ease-in-out
+        flex items-center justify-center
+        
+        lg:rounded-[15] 
+        lg:border-t lg:border-t-white/50
+        lg:backdrop-blur-xl
+        lg:shadow-[inset_0_0_0.5px_rgba(255,255,255,0.4),0_2px_10px_rgba(0,0,0,0.05)]
+        lg:bg-white/20
+        lg:hover:bg-white/30
+        lg:dark:bg-white/5
+        lg:dark:hover:bg-white/10
+        lg:hover:opacity-100
+        lg:hover:shadow-[inset_0_0_0.5px_rgba(255,255,255,0.45),0_4px_14px_rgba(0,0,0,0.08)]
+        lg:hover:backdrop-blur-lg
+        lg:dark:border-t-white/30
+        lg:px-4 lg:py-2 lg:sm:px-5 lg:sm:py-3 lg:md:px-6 lg:md:py-4
+        lg:text-lg lg:sm:text-xl lg:md:text-2xl lg:lg:text-3xl
+        
+        max-lg:bg-transparent max-lg:border-none max-lg:shadow-none max-lg:backdrop-blur-none
+        max-lg:hover:bg-transparent max-lg:hover:dark:bg-transparent
+        max-lg:hover:border-none max-lg:hover:shadow-none max-lg:hover:backdrop-blur-none
+        max-lg:h-[calc(100%-6px)] max-lg:max-h-[80%] max-lg:aspect-square max-lg:my-[3px]
+        max-lg:text-[clamp(20px,5.5vw,30px)]
+        
+        ${isScrolled ? "opacity-60 hover:opacity-100" : "opacity-100"}
+      `}
+    >
+      {isDark ? "☀" : "⏾"}
+    </button>
+  );
 }
+
+
 
