@@ -104,10 +104,13 @@ export default function Navbar() {
 
       {/* Theme toggle — contained without needing a className prop */}
       <div className="h-full flex items-center">
-        <div className="h-[70%] max-h-9 aspect-square grid place-items-center overflow-hidden
-                        [&>*]:h-full [&>*]:w-full [&_svg]:h-full [&_svg]:w-full">
-          <ThemeToggle />
-        </div>
+      <div className="
+          flex items-center justify-center
+          h-7 w-7 sm:h-8 sm:w-8     /* consistent square size */
+          rounded-md
+      ">
+        <ThemeToggle />
+      </div>
       </div>
     </nav>
   );
