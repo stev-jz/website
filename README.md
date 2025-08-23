@@ -1,7 +1,6 @@
 # 🌐 Personal Website
 
-This repo contains the source code for [stevenzhang.app](https://www.stevenzhang.app/)
-It showcases my projects, experiences, and background, and is built with modern web technologies.
+This repo contains the source code for [stevenzhang.app](https://www.stevenzhang.app/).
 
 ## 🚀 Tech Stack
 - **Framework:** [Next.js](https://nextjs.org/) (React)
