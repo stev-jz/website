@@ -34,19 +34,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}
       >
         {/* FIXED background layer (works on iOS/Android) */}
-        <div
-          aria-hidden="true"
-          className={`
-            pointer-events-none
-            fixed inset-0 -z-10
-            bg-center
-            bg-repeat
-            max-lg:bg-[length:auto_100dvh]
-            bg-[length:70%_auto]
-            bg-[url('/van-skyline.png')]
-            dark:bg-[url('/toronto-skyline.png')]
-          `}
-        />
+<div
+  aria-hidden="true"
+  className={`
+    pointer-events-none fixed inset-0 -z-10
+    bg-bottom
+    bg-repeat-x            /* repeat only horizontally */
+    lg:bg-repeat-x
+    max-lg:repeat-x    /* phones: no repeat at all */
+    max-lg:bg-[length:auto_100dvh]  /* fill height on mobile */
+    lg:bg-[length:auto_100%]        /* fill height on iPad/desktop */
+    bg-[url('/van-skyline.png')]
+    dark:bg-[url('/toronto-skyline.png')]
+  `}
+/>
 
         {/* CONTENT */}
         <ThemeProvider>

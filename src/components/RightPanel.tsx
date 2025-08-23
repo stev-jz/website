@@ -8,7 +8,12 @@ export default function RightPanel(){
     return(
 <div
   id="right-panel"
-  className="container-type-inline flex flex-col items-center lg:overflow-y-auto overflow-visible lg:h-screen scroll-smooth"
+  className="
+    container-type-inline flex flex-col items-center
+    lg:overflow-y-auto overflow-visible
+    lg:h-screen scroll-smooth
+    pb-[30vh] lg:pb-0  
+  "
 >
   <div className="lg:w-[clamp(30vw,80cqw,45vw)]">
     <section id="about" className="min-h-[85vh] pt-[5vh]"><About/></section>

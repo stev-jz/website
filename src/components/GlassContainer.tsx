@@ -130,8 +130,8 @@ export default function GlassContainer(props: GlassContainerProps) {
             {props.tags?.map(tag => (
               <li
                 key={tag}
-                className="inline-flex items-center lg:px-3 lg:py-1 lg:text-[clamp(8px,2.5vw,13px)]
-                           max-lg:text-[1.6vw] max-lg:leading-tight max-lg:px-2.5 max-lg:py-1
+                className="inline-flex items-center lg:px-3 lg:py-1 lg:text-[clamp(8px,2.3vw,12px)]
+                           max-lg:text-[1.2vw] max-lg:leading-tight max-lg:px-2.5 max-lg:py-1
                            font-semibold rounded-full bg-blue-950 text-blue-500"
               >
                 {tag}
