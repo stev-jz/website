@@ -4,21 +4,21 @@ import TechUsed from "@/components/techUsed";
 
 export default function Projects(){
     return(
-        <section id="projects" className="pt-[10vh] w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
+        <section id="projects" className="pt-[10vh] w-full max-lg:px-4 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 lg:gap-y-6 max-lg:gap-y-2 max-lg:grid-cols-1 max-lg:place-items-center max-lg:w-full">
                 <ProjectContainer 
                     title="Portfolio Website"
                     description="A responsive portfolio website built with Next.js and TypeScript, with ios26-inspired glassmorphism components."
                     link="https://github.com/stev-jz/website"
                     tags={["Next.js", "TypeScript", "Tailwind CSS", "React", "HTML (JSX)"]}
-                    projectImage={<img src="/s logo.png" className="w-[60%]" alt="Portfolio logo"/>}>
+                    projectImage={<img src="/s logo.png" className="w-[60%]" alt="Portfolio logo" loading="lazy"/>}>
                 </ProjectContainer>
             </div>
 
             {/*the footer */}
-            <div className=" pl-5 mt-40 mb-10 text-left text-black/60 dark:text-gray-400">
-                <p className=" tracking-tight font-light text-[2.1vh] leading-relaxed w-[70%] ">
-                    Designed and coded in{' '}
+            <div className="lg:pl-3 max-lg:px-4 mt-40 mb-10 text-left text-black/60 dark:text-gray-400">
+                <p className=" tracking-tight font-light lg:text-[2.1vh] max-lg:text-[3.2vw] leading-relaxed lg:w-[70%] max-lg:w-full ">
+                    Coded and designed in{' '}
                     <TechUsed href="https://code.visualstudio.com/">
                     Visual Studio Code
                     </TechUsed>
