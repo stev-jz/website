@@ -38,8 +38,8 @@ export default function Experience(){
                             group
                             inline-flex items-center
                             transition-colors duration-100 ease-out
-                            max-lg:text-[clamp(12px,3vw,20px)] text-[clamp(1.4vh,2.6cqw,2.3vh)] font-[500] text-gray-900 dark:text-white
-                            hover:text-blue-700 dark:hover:text-blue-600
+                            max-lg:text-[clamp(12px,3vw,20px)] text-[clamp(1.4vh,2.6cqw,2.3vh)] font-[500] text-gray-900 dark:text-white/70
+                            hover:text-blue-700/80 dark:hover:text-blue-600/80
                         "
                     >
                         View Resume

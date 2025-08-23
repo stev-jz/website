@@ -60,7 +60,36 @@ export default function ThemeToggle() {
         ${isScrolled ? "opacity-60 hover:opacity-100" : "opacity-100"}
       `}
     >
-      {isDark ? "☀" : "⏾"}
+{isDark ? (
+  // Sun (filled center + rounded thick rays)
+  <svg
+    viewBox="0 0 24 24"
+    className="lg:h-6 lg:w-6 max-lg:h-[clamp(20px,5.5vw,30px)] max-lg:w-[clamp(20px,5.5vw,30px)]"
+    aria-hidden="true"
+  >
+    {/* filled disc */}
+    <circle cx="12" cy="12" r="5" fill="currentColor" />
+    {/* rounded rays */}
+    <g
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M12 2.5v2.5M12 19v2.5M4.5 12H2M22 12h-2.5" />
+      <path d="M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" />
+    </g>
+  </svg>
+) : (
+<span
+  className="inline-block leading-none lg:text-[24px] max-lg:text-[clamp(20px,5.5vw,30px)]"
+  aria-hidden="true"
+>
+  ⏾
+</span>
+)}
+
     </button>
   );
 }
