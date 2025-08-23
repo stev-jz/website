@@ -4,12 +4,12 @@ import MenuList from './Menu';
 
 export default function Sidebar(){
     return(
-        <aside className="md:pl-[8.3vw] h-screen flex flex-col">
-            <div className='container-type-inline pt-[7vw]'>
-                <p className="text-[clamp(3.6vw,12cqw,4.33vw)] opacity-85 text-black/85 dark:text-white font-bold tracking-tighter">
+        <aside className="max-lg:text-center lg:pl-[8.3vw] lg:h-screen flex flex-col">
+            <div className='container-type-inline lg:pt-[7vw] max-lg:pt-[calc(env(safe-area-inset-top)+14vh)]'>
+                <p className="lg:text-[clamp(3.6vw,12cqw,4.33vw)] max-lg:text-[clamp(28px,7.5vw,40px)] opacity-85 text-black/85 dark:text-white font-bold tracking-tighter">
                 Hi, I&apos;m Steven👋
                 </p>
-                <h2 className="text-[clamp(1.1vw,3.7cqw,1.3vw)] opacity-80 tracking-tight dark:text-white font-[475] -mt-2.5">
+                <h2 className="lg:text-[clamp(1.1vw,3.7cqw,1.3vw)] max-lg:text-[clamp(14px,3.8vw,20px)] opacity-80 tracking-tight dark:text-white font-[475] lg:-mt-2.5 max-lg:mt-1">
                     Studying <Link href="https://www.ece.utoronto.ca/" target="_blank" 
                     className="relative inline-block
                     after:content-[''] after:absolute after:bottom-0 after:left-0

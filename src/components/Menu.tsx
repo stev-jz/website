@@ -42,7 +42,7 @@ useEffect(() => {
 }, []);
 
     return(
-    <nav className="pl-[1vw] pt-[4.5vw] flex flex-col gap-6" aria-label="Section menu">
+    <nav className="hidden pl-[1vw] pt-[4.5vw] lg:flex flex-col gap-6" aria-label="Section menu">
       {items.map(({ id, label }) => {
         const isActive = active === id;
 

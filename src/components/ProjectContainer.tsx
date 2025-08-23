@@ -14,9 +14,10 @@ export type ProjectContainerProps = {
 export default function ProjectContainer(props: ProjectContainerProps)
 {
   return (
-    <Link href={props.link} target="_blank"
-      className='
-      w-full
+    <div className="w-full max-lg:w-[50vw] max-lg:min-w-[280px] max-lg:mx-auto">
+      <Link href={props.link} target="_blank"
+        className='
+        w-full
       group
       mb-3
         rounded-[15]
@@ -41,11 +42,11 @@ export default function ProjectContainer(props: ProjectContainerProps)
           {props.projectImage}
         </div>
         <div className="flex flex-col gap-y-5 mt-4">
-          <h1 className="
-            transition-colors duration-100 ease-out 
-            dark:group-hover:text-blue-600 
-            group-hover:text-blue-800 
-            text-xl font-semibold text-black dark:text-white">
+                     <h1 className="
+             transition-colors duration-100 ease-out 
+             dark:group-hover:text-blue-600 
+             group-hover:text-blue-800 
+             lg:text-xl max-lg:text-[clamp(16px,4vw,22px)] font-semibold text-black dark:text-white">
             {props.title} <span className="
               inline-block
               transform
@@ -63,15 +64,16 @@ export default function ProjectContainer(props: ProjectContainerProps)
             -&gt;
             </span>
             </h1>
-          <p className="dark:text-gray-300 text-black text-[clamp(0.7vh,2cqw,2vh)] opacity-55">{props.description}</p>
-          <ul className="flex flex-wrap gap-2">
+                     <p className="dark:text-gray-300 text-black lg:text-[clamp(0.7vh,2.2cqw,2vh)] max-lg:text-[clamp(10px,2.5vw,14px)] opacity-55">{props.description}</p>
+          <ul className="flex flex-wrap lg:gap-2 max-lg:gap-1.5 max-lg:mt-2">
             { props.tags && props.tags.map(tag => 
             <li 
             key={ tag }
-            className="inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-blue-950 text-blue-500 whitespace-nowrap">
+            className="inline-flex items-center lg:px-3 lg:py-1 lg:text-[clamp(7px,2vw,13px)]  max-lg:text-[1.8vw] max-lg:leading-tight max-lg:px-2.5 max-lg:py-1 font-semibold rounded-full bg-blue-950 text-blue-500 whitespace-nowrap">
               {tag}</li>)}
           </ul>
         </div>
-    </Link>
+      </Link>
+    </div>
   );
 }
