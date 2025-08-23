@@ -31,6 +31,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
           bg-[url('/van-skyline.png')]
           dark:bg-[url('/toronto-skyline.png')]
           bg-center
+          bg-no-repeat-y
           h-screen
           bg-fixed
           w-full
