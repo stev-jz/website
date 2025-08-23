@@ -15,7 +15,7 @@ export default function GlassContainer(props: GlassContainerProps) {
   const descId = useId();
 
   return (
-    <div className="container-type-inline max-lg:w-[80vw] max-lg:mx-auto max-lg:px-4">
+    <div className="container-type-inline max-lg:w-[90vw] max-lg:mx-auto max-lg:px-4">
       <button
         type="button"
         onClick={() => setOpen(v => !v)}
