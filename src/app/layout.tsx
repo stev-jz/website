@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     bg-bottom
     bg-repeat-x            /* repeat only horizontally */
     lg:bg-repeat-x
-    max-lg:repeat-x    /* phones: no repeat at all */
+    max-lg:repeat-x   
     max-lg:bg-[length:auto_100dvh]  /* fill height on mobile */
     lg:bg-[length:auto_100%]        /* fill height on iPad/desktop */
     bg-[url('/van-skyline.png')]
