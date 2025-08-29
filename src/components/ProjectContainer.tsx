@@ -14,7 +14,7 @@ export type ProjectContainerProps = {
 export default function ProjectContainer(props: ProjectContainerProps)
 {
   return (
-    <div className="w-full max-lg:w-[50vw] max-lg:min-w-[280px] max-lg:mx-auto h-full">
+    <div className="w-full max-lg:w-[60vw] max-lg:min-w-[320px] max-lg:mx-auto h-full">
       <Link href={props.link} target="_blank"
         className='
         w-full
@@ -42,31 +42,34 @@ export default function ProjectContainer(props: ProjectContainerProps)
         <div className="flex justify-center items-center rounded-t-[15px] overflow-hidden">
           {props.projectImage}
         </div>
-        <div className="flex flex-col gap-y-5 mt-4 p-6 flex-1">
-                     <h1 className="
-             transition-colors duration-100 ease-out 
-             dark:group-hover:text-blue-600 
-             group-hover:text-blue-800 
-             lg:text-xl max-lg:text-[clamp(16px,4vw,22px)] font-semibold text-black dark:text-white">
-            {props.title} <span className="
-              inline-block
-              transform
-              transition-all duration-200 ease-out
-              rotate-315
-              opacity-55
-              text-[17px]
-              group-hover:opacity-90
-              group-hover:translate-x-1
-              group-hover:-translate-y-1
-              group-hover:text-blue-800
-              dark:group-hover:text-blue-500
-              font-medium
-            ">
-            -&gt;
-            </span>
+        <div className="flex flex-col justify-between mt-4 p-6 flex-1">
+          <div className="flex flex-col gap-y-5">
+            <h1 className="
+              transition-colors duration-100 ease-out 
+              dark:group-hover:text-blue-600 
+              group-hover:text-blue-800 
+              lg:text-xl max-lg:text-[clamp(16px,4vw,22px)] font-semibold text-black dark:text-white">
+              {props.title} <span className="
+                inline-block
+                transform
+                transition-all duration-200 ease-out
+                rotate-315
+                opacity-55
+                text-[17px]
+                group-hover:opacity-90
+                group-hover:translate-x-1
+                group-hover:-translate-y-1
+                group-hover:text-blue-800
+                dark:group-hover:text-blue-500
+                font-medium
+              ">
+              -&gt;
+              </span>
             </h1>
-                     <p className="dark:text-gray-300 text-black lg:text-[clamp(0.7vh,2.2cqw,2vh)] max-lg:text-[clamp(10px,2.5vw,14px)] opacity-55">{props.description}</p>
-          <ul className="flex flex-wrap lg:gap-2 max-lg:gap-1.5 max-lg:mt-2">
+            <p className="dark:text-gray-300 text-black lg:text-[clamp(0.7vh,2.2cqw,2vh)] max-lg:text-[clamp(10px,2.5vw,14px)] opacity-55">{props.description}</p>
+          </div>
+          
+          <ul className="flex flex-wrap lg:gap-2 max-lg:gap-1.5 max-lg:mt-2 mt-auto">
             { props.tags && props.tags.map(tag => 
             <li 
             key={ tag }

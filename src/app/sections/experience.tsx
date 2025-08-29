@@ -9,7 +9,8 @@ export default function Experience(){
                     title="Software Engineering Intern ‧ Skynet Systems"
                     description="Worked on building a React + TypeScript admin dashboard to track technician jobs for 30+ employees, implemented secure authentication with JWT and bcrypt, and developed an automated billing system using Node.js, Express, and Prisma ORM for recurring client invoices."
                     link="https://www.skynetsystems.ca/"
-                    projectImage={<img src="/skynetlogo.png" className="size-full" alt="Skynet logo" loading="lazy"/>}>
+                    projectImage={<img src="/skynetlogo.png" className="size-full" alt="Skynet logo" loading="lazy"/>}
+                    tags={["React", "TypeScript", "JWT", "bcrypt", "Node.js", "Express", "Prisma ORM"]}>
                 </GlassContainer>
                 <GlassContainer 
                     date="JULY 2025 — PRESENT"
