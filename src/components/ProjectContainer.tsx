@@ -14,10 +14,11 @@ export type ProjectContainerProps = {
 export default function ProjectContainer(props: ProjectContainerProps)
 {
   return (
-    <div className="w-full max-lg:w-[50vw] max-lg:min-w-[280px] max-lg:mx-auto">
+    <div className="w-full max-lg:w-[50vw] max-lg:min-w-[280px] max-lg:mx-auto h-full">
       <Link href={props.link} target="_blank"
         className='
         w-full
+        h-full
       group
       mb-3
         rounded-[15]
@@ -37,11 +38,11 @@ export default function ProjectContainer(props: ProjectContainerProps)
         hover:border-t-white-45
         dark:hover:border-t-white/35
 
-      flex flex-col p-6'>
-        <div className="flex justify-center items-center">
+      flex flex-col'>
+        <div className="flex justify-center items-center rounded-t-[15px] overflow-hidden">
           {props.projectImage}
         </div>
-        <div className="flex flex-col gap-y-5 mt-4">
+        <div className="flex flex-col gap-y-5 mt-4 p-6 flex-1">
                      <h1 className="
              transition-colors duration-100 ease-out 
              dark:group-hover:text-blue-600 
