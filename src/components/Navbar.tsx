@@ -61,18 +61,19 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`
-        group fixed w-full
+              className={`
+        group fixed w-[calc(100%-2rem)] left-4 right-4 top-5
         h-[clamp(56px,10dvh,72px)]   /* taller on landscape phones */
         z-10 overflow-hidden
         transition duration-300 ease-in-out
         hover:shadow-lg hover:dark:bg-black/20 hover:bg-gray-400/10 hover:opacity-90
-        backdrop-blur-xl border-t border-t-white/30
+        backdrop-blur-xl border-t border-transparent
         flex justify-between items-center
         px-5 sm:px-6
         /* smaller menu text on mobile/landscape */
         text-[clamp(12px,2.4vw,16px)] tracking-tight leading-none
-        ${scrolled ? "shadow-lg dark:bg-black/30 bg-white/20 backdrop-blur-xl" : "bg-transparent"}
+        rounded-xl
+        ${scrolled ? "shadow-lg dark:bg-black/30 bg-white/20 backdrop-blur-xl border-t-white/30" : "bg-transparent"}
         block lg:hidden
       `}
     >
