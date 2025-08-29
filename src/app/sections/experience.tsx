@@ -7,16 +7,16 @@ export default function Experience(){
                 <GlassContainer 
                     date="MAY — AUG 2025"
                     title="Software Engineering Intern ‧ Skynet Systems"
-                    description="Work in Progress."
+                    description="Worked on building a React + TypeScript admin dashboard to track technician jobs for 30+ employees, implemented secure authentication with JWT and bcrypt, and developed an automated billing system using Node.js, Express, and Prisma ORM for recurring client invoices."
                     link="https://www.skynetsystems.ca/"
                     projectImage={<img src="/skynetlogo.png" className="size-full" alt="Skynet logo" loading="lazy"/>}>
                 </GlassContainer>
                 <GlassContainer 
                     date="JULY 2025 — PRESENT"
                     title="Frontend Developer ‧ EWB UofT"
-                    description="Work in Progress."
+                    description="Lead developer for EWB UofT&apos;s Food Resource Hub, a Next.js + Tailwind website aimed to centralize food resources for UofT students."
+                    tags={["TypeScript", "Next.js", "React", "Tailwind CSS", "HTML (JSX)", "Google Maps API"]}
                     link="https://uoft.ewb.ca/"
-                    tags={["TypeScript", "Next.js", "React", "Tailwind CSS", "HTML (JSX)"]}
                     projectImage={<img className="rounded-md size-full" src="/EWB-logo.png" alt="EWB logo" loading="lazy"/>}>
                 </GlassContainer>
                 <GlassContainer 
@@ -31,19 +31,19 @@ export default function Experience(){
                 {/* Resume Link */}
                 <div className="container-type-inline lg:flex lg:justify-start max-lg:w-[80vw] max-lg:mx-auto mt-8 max-lg:mt-6">
                     <Link 
-                        href="/resume.pdf" 
+                        href="/Steven_Zhang_Fall_2025.pdf" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
                             group
                             inline-flex items-center
                             transition-colors duration-100 ease-out
-                            max-lg:text-[clamp(12px,3vw,20px)] text-[clamp(1.4vh,2.6cqw,2.3vh)] font-[500] text-gray-900 dark:text-white/70
-                            hover:text-blue-700/80 dark:hover:text-blue-600/80
+                            max-lg:text-[clamp(12px,3vw,20px)] text-[clamp(1.4vh,2.6cqw,2.3vh)] font-[500] text-black/60 dark:text-white/70
+                            hover:text-black dark:hover:text-blue-600/80
                         "
                     >
                         View Resume
-                        <span className="inline-block transform transition-all duration-200 ease-out rotate-315 opacity-55 max-lg:text-[clamp(12px,3vw,20px)] text-[clamp(1.4vh,2.6cqw,2.3vh)] group-hover:opacity-90 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-blue-800 dark:group-hover:text-blue-500 font-medium ml-1.5">
+                        <span className="text-black/60inline-block transform transition-all duration-200 ease-out rotate-315 opacity-55 max-lg:text-[clamp(12px,3vw,20px)] text-[clamp(1.4vh,2.6cqw,2.3vh)] group-hover:opacity-90 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-black dark:group-hover:text-blue-500 font-medium ml-1.5">
                             -&gt;
                         </span>
                     </Link>
