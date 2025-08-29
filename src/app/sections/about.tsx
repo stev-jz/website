@@ -51,13 +51,20 @@ export default function About() {
 
       <div className="container-type-inline mx-auto mt-[2vw] dark:h-[1.5px] h-[2px] bg-gradient-to-r from-transparent via-gray-700/30 dark:via-white/25 to-transparent" />
 
-      <div className="flex flex-col items-center lg:mt-[30vh] max-lg:mt-[clamp(12px,6vh,32px)]">
-        <p className="dark:text-white/70 dark:opacity-60 text-gray-900/60 lg:text-xl max-lg:text-[clamp(12px,3vw,16px)] tracking-tight mb-2">
+      <button 
+        onClick={() => {
+          document.getElementById('experience')?.scrollIntoView({ 
+            behavior: 'smooth' 
+          });
+        }}
+        className="flex flex-col items-center lg:mt-[30vh] max-lg:mt-[clamp(12px,6vh,32px)] bg-transparent border-none p-0 m-0 cursor-pointer mx-auto group"
+      >
+        <p className="dark:text-white/70 dark:opacity-60 text-gray-900/60 lg:text-xl max-lg:text-[clamp(12px,3vw,16px)] tracking-tight mb-2 group-hover:opacity-50 transition-opacity duration-100">
           See more
         </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:size-[8vh] max-lg:size-[clamp(20px,7vw,36px)] dark:opacity-60 dark:text-white/70 text-gray-900/60 animate-bounce"
+          className="lg:size-[8vh] max-lg:size-[clamp(20px,7vw,36px)] dark:opacity-60 dark:text-white/70 text-gray-900/60 animate-bounce group-hover:opacity-50 transition-opacity duration-100"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -65,7 +72,7 @@ export default function About() {
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
-      </div>
+      </button>
     </>
   );
 }
