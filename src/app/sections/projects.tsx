@@ -29,9 +29,9 @@ export default function Projects(){
                 </ProjectContainer>
                 <ProjectContainer 
                     title="Syllabus Tracker AI"
-                    description="A personal dashboard tool to track important course information (grading, exam dates, etc.). AI-powered using Gemini API to extract syllabus information from PDFs."
+                    description="A fullstack dashboard tool to track important course information (grading, exam dates, etc.). AI-powered using Gemini API to extract syllabus information from PDFs."
                     link="https://github.com/stev-jz/syllabus-tracker"
-                    tags={["Next.js", "TypeScript", "Tailwind CSS", "React", "HTML (JSX)", "Gemini API"]}
+                    tags={["SQLite", "Prisma", "Next.js", "TypeScript", "Tailwind CSS", "React", "HTML (JSX)", "Gemini API (1.5 Flash)"]}
                     projectImage={<img src="/syllabus-tracker-image.png" className="w-[100%]" alt="Syllabus Tracker AI" loading="lazy"/>}>
                 </ProjectContainer>
             </div>
