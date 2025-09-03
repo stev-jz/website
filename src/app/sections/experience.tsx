@@ -30,7 +30,7 @@ export default function Experience(){
                 </GlassContainer>
                 
                 {/* Resume Link */}
-                <div className="container-type-inline lg:flex lg:justify-start max-lg:w-[80vw] max-lg:mx-auto mt-8 max-lg:mt-6 !hidden">
+                <div className="container-type-inline lg:flex lg:justify-start max-lg:w-[80vw] max-lg:mx-auto mt-8 max-lg:mt-6">
                     <Link 
                         href="/Steven_Zhang_Fall_2025.pdf" 
                         target="_blank"
