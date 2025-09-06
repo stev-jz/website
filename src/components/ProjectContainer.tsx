@@ -66,15 +66,15 @@ export default function ProjectContainer(props: ProjectContainerProps)
               -&gt;
               </span>
             </h1>
-            <p className="dark:text-gray-300 text-black lg:text-[clamp(0.7vh,2.2cqw,2vh)] max-lg:text-[clamp(10px,2.5vw,14px)] opacity-55">{props.description}</p>
+            <p className="dark:text-gray-300 text-black lg:text-[clamp(0.6vh,2vw,1.8vh)] max-lg:text-[clamp(10px,2.5vw,14px)] opacity-55">{props.description}</p>
           </div>
           
           <ul className="flex flex-wrap lg:gap-2 max-lg:gap-1.5 max-lg:mt-2 mt-auto">
             { props.tags && props.tags.map(tag => 
             <li 
             key={ tag }
-            className="inline-flex items-center lg:px-3 lg:py-1 lg:text-[clamp(8px,2.3vw,11px)]
-                           max-lg:text-[1.2vw] max-lg:leading-tight max-lg:px-2.5 max-lg:py-1 font-semibold rounded-full bg-blue-950 text-blue-500 whitespace-nowrap">
+            className="inline-flex items-center lg:px-2.5 lg:py-0.5 lg:text-[clamp(7px,2vw,10px)]
+                           max-lg:text-[1.7vw] max-lg:leading-tight max-lg:px-2.5 max-lg:py-0.5 font-semibold rounded-full bg-blue-950 text-blue-500 whitespace-nowrap">
               {tag}</li>)}
           </ul>
         </div>

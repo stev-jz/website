@@ -40,20 +40,27 @@ function ThemeAwareImage() {
 export default function Projects(){
     return(
         <section id="projects" className="pt-[10vh] w-full max-lg:px-4 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-2">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 lg:gap-y-6 max-lg:gap-y-2 max-lg:grid-cols-1 max-lg:place-items-center max-lg:w-full items-stretch">
-                <ProjectContainer 
-                    title="Portfolio Website"
-                    description="A responsive portfolio website built with Next.js and TypeScript, with ios26-inspired glassmorphism components."
-                    link="https://github.com/stev-jz/website"
-                    tags={["Next.js", "TypeScript", "Tailwind CSS", "React", "HTML (JSX)"]}
-                    projectImage={<ThemeAwareImage />}>
-                </ProjectContainer>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 lg:gap-y-6 max-lg:gap-y-2 max-lg:grid-cols-1 max-lg:place-items-center max-lg:w-full items-stretch">
                 <ProjectContainer 
                     title="Syllabus Tracker AI"
                     description="A one stop, fullstack dashboard tool to track important course information (grading, exam dates, etc.). AI-powered using Gemini API to extract syllabus information from PDFs."
                     link="https://github.com/stev-jz/syllabus-tracker"
                     tags={["SQLite", "Prisma", "Next.js", "TypeScript", "Tailwind CSS", "React", "HTML (JSX)", "Gemini API (1.5 Flash)"]}
                     projectImage={<img src="/syllabus-tracker-image.png" className="w-[100%]" alt="Syllabus Tracker AI" loading="lazy"/>}>
+                </ProjectContainer>                
+                <ProjectContainer 
+                    title="Web Music Streamer"
+                    description="A fullstack audio streamer in Next.js + Supabase. YouTube-to-MP3 conversion with real-time streaming and playback controls using HTML5 audio API."
+                    link="https://github.com/stev-jz/WebWave"
+                    tags={["TypeScript", "Next.js", "Supabase", "Tailwind CSS", "React", "HTML5 Audio API", "PostgreSQL", "Cloud Storage"]}
+                    projectImage={<img src="/WebWave.png" className="w-[100%]" alt="Web Music Streamer" loading="lazy"/>}>
+                </ProjectContainer>                
+                <ProjectContainer 
+                    title="Portfolio Website"
+                    description="A responsive portfolio website built with Next.js and TypeScript, with ios26-inspired glassmorphism components."
+                    link="https://github.com/stev-jz/website"
+                    tags={["Next.js", "TypeScript", "Tailwind CSS", "React", "HTML (JSX)"]}
+                    projectImage={<ThemeAwareImage />}>
                 </ProjectContainer>
             </div>
 
