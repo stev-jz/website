@@ -38,9 +38,9 @@ export default function About() {
           <div className="max-lg:bg-gray-400/15 max-lg:dark:bg-white/4 max-lg:backdrop-blur-xl max-lg:rounded-[15px] max-lg:p-6 max-lg:border-t max-lg:border-t-white/40 max-lg:dark:border-t-white/20 max-lg:shadow-[0_10px_20px_rgba(0,0,0,0.25)]">
             <p className="tracking-tighter lg:ml-[2vw] lg:text-[clamp(0.8vw,2.5cqw,1.3vw)] max-lg:text-[clamp(12px,3vw,18px)] leading-relaxed max-lg:mb-[clamp(4px,1.5vh,8px)] opacity-80 text-center text-gray-900 dark:text-white">
             I&apos;m a computer engineering student at the University of Toronto
-            and originally from Vancouver. I like building full-stack apps,
-            websites, and other tools for my personal use. Currently, I am a
-            frontend developer for EWB, UofT Chapter and a SWE Intern at Skynet
+            and originally from Vancouver. I like building full-stack apps
+            and software tools for my personal use. Currently, I am a
+            frontend developer for EWB, UofT Chapter and was recently a SWE Intern at Skynet
             Systems Ltd. When I&apos;m not coding, I like to stay physcially
             active! Playing basketball, hiking trails, and going gymming are my
             hobbies.
