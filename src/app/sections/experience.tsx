@@ -29,8 +29,8 @@ export default function Experience(){
                     projectImage={<img src="/Geering-up-logo.png" className=" size-full rounded-full" alt="Geering Up logo" loading="lazy"/>}>
                 </GlassContainer>
                 
-                {/* Resume Link */}
-                <div className="container-type-inline lg:flex lg:justify-start max-lg:w-[80vw] max-lg:mx-auto mt-8 max-lg:mt-6">
+                {/* Resume Link - Hidden */}
+                {/* <div className="container-type-inline lg:flex lg:justify-start max-lg:w-[80vw] max-lg:mx-auto mt-8 max-lg:mt-6">
                     <Link 
                         href="/Steven_Zhang_Fall_2025.pdf" 
                         target="_blank"
@@ -48,7 +48,7 @@ export default function Experience(){
                             -&gt;
                         </span>
                     </Link>
-                </div>
+                </div> */}
         </section>
     )
 }
