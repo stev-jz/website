@@ -7,16 +7,16 @@ export default function Sidebar(){
         <aside className="max-lg:text-center lg:pl-[8.3vw] lg:h-screen flex flex-col">
             <div className='container-type-inline lg:pt-[7vw] max-lg:pt-[calc(env(safe-area-inset-top)+14vh)]'>
                 <p className="lg:text-[clamp(3.6vw,12cqw,4.33vw)] max-lg:text-[clamp(28px,7.5vw,40px)] opacity-85 text-black/85 dark:text-white font-bold tracking-tighter">
-                Hi, I&apos;m Steven👋
+                Steven Zhang
                 </p>
                 <h2 className="lg:text-[clamp(1.1vw,3.7cqw,1.3vw)] max-lg:text-[clamp(14px,3.8vw,20px)] opacity-80 tracking-tight dark:text-white font-[475] lg:-mt-2.5 max-lg:mt-1">
-                    Studying <Link href="https://www.ece.utoronto.ca/" target="_blank" 
+                    <Link href="https://www.ece.utoronto.ca/" target="_blank" 
                     className="relative inline-block
                     after:content-[''] after:absolute after:bottom-0 after:left-0
                     after:w-0 after:h-[1.75px] dark:after:bg-gray-300 after:bg-black
                     after:transition-[width] after:duration-300
                     hover:after:w-full
-                    "> ECE at the University of Toronto</Link>
+                    "> Computer Engineering at University of Toronto</Link>
                 </h2>
                 <MenuList></MenuList>
             </div>
