@@ -45,7 +45,7 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
       {/* Icon */}
       <div className="shrink-0">
         <div className="
-          size-8
+          size-10
           rounded-lg overflow-hidden
           [&>*]:h-full [&>*]:w-full
           [&_img]:block [&_img]:h-full [&_img]:w-full [&_img]:object-contain
@@ -60,7 +60,7 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
           <div className="flex-1 min-w-0">
             <h3 className={`
               w-full break-words
-              text-[10px] font-normal
+              text-sm font-normal
               ${textPrimary}
               ${hoverText}
               ${textShadow}
@@ -71,7 +71,7 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
             
             {props.date && (
               <div className="mt-0.5">
-                <span className={`text-[9px] font-normal ${textMuted} ${textShadow} transition-colors duration-200`}>
+                <span className={`text-[11px] font-normal ${textMuted} ${textShadow} transition-colors duration-200`}>
                   {props.date}
                 </span>
               </div>
@@ -101,7 +101,7 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
             `}
           >
             <div className="overflow-hidden">
-              <p className={`text-[9px] leading-relaxed ${textSecondary} ${textShadow} mb-2 transition-colors duration-200`}>
+              <p className={`text-[11px] leading-relaxed ${textSecondary} ${textShadow} mb-2 transition-colors duration-200`}>
                 {props.description}
                 {' '}
                 <a
@@ -120,11 +120,11 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
               </p>
               
               {props.tags && props.tags.length > 0 && (
-                <ul className="flex flex-wrap gap-1">
+                <ul className="flex flex-wrap gap-1.5">
                   {props.tags.map(tag => (
                     <li
                       key={tag}
-                      className="text-[9px] px-1.5 py-0.5 font-medium rounded-full bg-blue-950 text-blue-400"
+                      className="text-[10px] px-2 py-0.5 font-medium rounded-full bg-blue-950 text-blue-400"
                     >
                       {tag}
                     </li>

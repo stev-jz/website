@@ -6,7 +6,7 @@ export default function Sidebar(){
     return(
         <aside className="max-lg:text-center lg:pl-[8.3vw] lg:h-screen flex flex-col lg:justify-between">
             <div className='container-type-inline lg:pt-[9vw] max-lg:pt-[calc(env(safe-area-inset-top)+14vh)]'>
-                <p className="lg:text-[clamp(4vw,13cqw,4.8vw)] max-lg:text-[clamp(28px,7.5vw,40px)] opacity-85 text-black/85 dark:text-white font-bold tracking-tighter">
+                <p className="lg:text-[clamp(3.2vw,11cqw,4vw)] max-lg:text-[clamp(28px,7.5vw,40px)] opacity-85 text-black/85 dark:text-white font-bold tracking-tighter">
                   Steven Zhang
                 </p>
                 <h2 className="lg:text-[clamp(1.1vw,3.7cqw,1.3vw)] max-lg:text-[clamp(14px,3.8vw,20px)] opacity-80 tracking-tight dark:text-white font-[475] lg:mt-0.5 max-lg:mt-1">

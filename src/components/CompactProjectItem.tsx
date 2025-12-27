@@ -47,10 +47,10 @@ export default function CompactProjectItem(props: CompactProjectItemProps) {
       </div>
 
       {/* Title + expand indicator */}
-      <div className="flex items-start gap-2 mt-1.5 px-1">
+      <div className="flex items-start gap-2 mt-2 px-1">
         <h3 className={`
           flex-1 min-w-0 break-words
-          text-[10px] font-normal
+          text-sm font-normal
           ${textPrimary}
           ${hoverText}
           ${textShadow}
@@ -82,7 +82,7 @@ export default function CompactProjectItem(props: CompactProjectItemProps) {
           `}
         >
           <div className="overflow-hidden">
-            <p className={`text-[9px] leading-relaxed ${textSecondary} ${textShadow} mb-2 transition-colors duration-200`}>
+            <p className={`text-[11px] leading-relaxed ${textSecondary} ${textShadow} mb-2 transition-colors duration-200`}>
               {props.description}
               {' '}
               <a
@@ -101,11 +101,11 @@ export default function CompactProjectItem(props: CompactProjectItemProps) {
             </p>
             
             {props.tags && props.tags.length > 0 && (
-              <ul className="flex flex-wrap gap-1">
+              <ul className="flex flex-wrap gap-1.5">
                 {props.tags.map(tag => (
                   <li
                     key={tag}
-                    className="text-[9px] px-1.5 py-0.5 font-medium rounded-full bg-blue-950 text-blue-400"
+                    className="text-[10px] px-2 py-0.5 font-medium rounded-full bg-blue-950 text-blue-400"
                   >
                     {tag}
                   </li>

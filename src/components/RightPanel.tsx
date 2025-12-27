@@ -60,7 +60,7 @@ function CompactView() {
       >
         {/* Experience Section */}
         <div className="mb-4">
-          <h2 className={`text-[10px] font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-1.5 px-1 transition-colors duration-300`}>
+          <h2 className={`text-sm font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-2 px-1 transition-colors duration-300`}>
             Experience
           </h2>
           <div className="flex flex-col -mx-1">
@@ -99,22 +99,22 @@ function CompactView() {
 
         {/* Skills Section */}
         <div className="mb-4">
-          <h2 className={`text-[10px] font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-1.5 px-1 transition-colors duration-300`}>
+          <h2 className={`text-sm font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-2 px-1 transition-colors duration-300`}>
             Skills
           </h2>
-          <div className="px-1 space-y-1">
+          <div className="px-1 space-y-1.5">
             {[
               { label: "Languages", skills: ["C", "C++", "Python", "TypeScript", "JavaScript"] },
               { label: "Full-Stack", skills: ["Next.js", "React", "REST APIs", "PostgreSQL", "Prisma", "Supabase"] },
               { label: "Hardware", skills: ["Verilog", "DE1-SoC FPGA", "ModelSim", "Quartus Prime"] },
               { label: "AI & Data", skills: ["Gemini API", "Whisper", "pandas", "NumPy"] },
             ].map((category) => (
-              <div key={category.label} className="flex flex-wrap items-center gap-x-1 gap-y-0.5">
-                <span className={`text-[8px] ${textMuted} ${textShadow} font-medium shrink-0 mr-0.5`}>{category.label}:</span>
+              <div key={category.label} className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
+                <span className={`text-[10px] ${textMuted} ${textShadow} font-medium shrink-0 mr-0.5`}>{category.label}:</span>
                 {category.skills.map((skill) => (
                   <span 
                     key={skill}
-                    className={`text-[8px] px-1.5 py-0.5 rounded-full ${isLight ? 'bg-white/15 text-white/80' : 'bg-white/30 text-gray-800'} ${textShadow} font-medium transition-colors duration-300`}
+                    className={`text-[10px] px-2 py-0.5 rounded-full ${isLight ? 'bg-white/15 text-white/80' : 'bg-white/30 text-gray-800'} ${textShadow} font-medium transition-colors duration-300`}
                   >
                     {skill}
                   </span>
@@ -129,7 +129,7 @@ function CompactView() {
 
         {/* Projects Section */}
         <div>
-          <h2 className={`text-[10px] font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-1.5 px-1 transition-colors duration-300`}>
+          <h2 className={`text-sm font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-2 px-1 transition-colors duration-300`}>
             Projects
           </h2>
           <div className="grid grid-cols-2 gap-2">
