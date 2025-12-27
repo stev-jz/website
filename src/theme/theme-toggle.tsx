@@ -36,20 +36,16 @@ export default function ThemeToggle() {
         transition-all duration-300 ease-in-out
         flex items-center justify-center
         
-        lg:rounded-[15] 
-        lg:border-t lg:border-t-white/50
+        lg:rounded-xl
+        lg:border-t lg:border-t-white/40
         lg:backdrop-blur-xl
-        lg:shadow-[inset_0_0_0.5px_rgba(255,255,255,0.4),0_2px_10px_rgba(0,0,0,0.05)]
-        lg:bg-white/20
-        lg:hover:bg-white/30
-        lg:dark:bg-white/5
-        lg:dark:hover:bg-white/10
-        lg:hover:opacity-100
-        lg:hover:shadow-[inset_0_0_0.5px_rgba(255,255,255,0.45),0_4px_14px_rgba(0,0,0,0.08)]
-        lg:hover:backdrop-blur-lg
-        lg:dark:border-t-white/30
-        lg:px-4 lg:py-2 lg:sm:px-5 lg:sm:py-3 lg:md:px-6 lg:md:py-4
-        lg:text-lg lg:sm:text-xl lg:md:text-2xl lg:lg:text-3xl
+        lg:shadow-[0_4px_15px_rgba(0,0,0,0.15)]
+        lg:bg-white/15
+        lg:hover:bg-white/25
+        lg:dark:bg-white/8
+        lg:dark:hover:bg-white/15
+        lg:dark:border-t-white/25
+        lg:px-3 lg:py-2
         
         max-lg:bg-transparent max-lg:border-none max-lg:shadow-none max-lg:backdrop-blur-none
         max-lg:hover:bg-transparent max-lg:hover:dark:bg-transparent
@@ -57,14 +53,14 @@ export default function ThemeToggle() {
         max-lg:h-[calc(100%-6px)] max-lg:max-h-[80%] max-lg:aspect-square max-lg:my-[3px]
         max-lg:text-[clamp(20px,5.5vw,30px)]
         
-        ${isScrolled ? "opacity-60 hover:opacity-100" : "opacity-100"}
+        ${isScrolled ? "opacity-80 hover:opacity-100" : ""}
       `}
     >
 {isDark ? (
   // Sun (filled center + rounded thick rays)
   <svg
     viewBox="0 0 24 24"
-    className="lg:h-6 lg:w-6 max-lg:h-[clamp(20px,5.5vw,30px)] max-lg:w-[clamp(20px,5.5vw,30px)]"
+    className="lg:h-5 lg:w-5 max-lg:h-[clamp(20px,5.5vw,30px)] max-lg:w-[clamp(20px,5.5vw,30px)]"
     aria-hidden="true"
   >
     {/* filled disc */}
@@ -83,7 +79,7 @@ export default function ThemeToggle() {
   </svg>
 ) : (
 <span
-  className="inline-block leading-none lg:text-[24px] max-lg:text-[clamp(20px,5.5vw,30px)]"
+  className="inline-block leading-none lg:text-[20px] max-lg:text-[clamp(20px,5.5vw,30px)]"
   aria-hidden="true"
 >
   ⏾

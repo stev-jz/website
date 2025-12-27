@@ -80,16 +80,16 @@ export default function Home() {
         self-center
         group
         z-50
-        md:w-[5px]
-        px-5
+        md:w-[3px]
+        px-4
         h-[80%]
         transition-all duration-300
         rounded-full
         bg-transparent
         select-none 
         cursor-ew-resize">
-        <div className='w-[3.5px] group-hover:w-[4px] h-full z-60 rounded-full select-none 
-        cursor-ew-resize transition-all duration-300 dark:bg-gray-500 bg-gray-600/40 group-hover:bg-gray-800/60 dark:group-hover:bg-gray-300'></div>
+        <div className='w-[1.5px] group-hover:w-[2px] h-full z-60 rounded-full select-none 
+        cursor-ew-resize transition-all duration-300 dark:bg-gray-500/60 bg-gray-500/30 group-hover:bg-gray-600/50 dark:group-hover:bg-gray-400/70'></div>
       </div>
 
       <div draggable={false} className="h-auto lg:overflow-auto lg:flex-1 select-none max-lg:px-4">

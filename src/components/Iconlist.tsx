@@ -65,7 +65,7 @@ const iconConfigs: IconConfig[] = [
 export default function Iconlist(){
     return(
         <nav 
-          className="py-[20] lg:pt-[30vh] max-lg:mt-1 max-lg:px-4 container-type-inline flex gap-x-4 opacity-65 dark:opacity-55 max-lg:justify-center" 
+          className="max-lg:py-2 max-lg:mt-1 max-lg:px-4 container-type-inline flex gap-x-4 opacity-65 dark:opacity-55 max-lg:justify-center" 
           aria-label="Social links"
         >
             {iconConfigs.map((icon, index) => (
