@@ -68,7 +68,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col lg:flex-row h-screen">
-      <div style = {isLg ? { width: `${leftWidth}%`} : {width: "100%"}} className="lg:overflow-hidden overflow-visible select-none transiton-all duration-75 max-lg:px-4">
+      <div style = {isLg ? { width: `${leftWidth}%`} : {width: "100%"}} className="lg:overflow-hidden overflow-visible select-none transition-all duration-75 max-lg:px-4">
         <Suspense fallback={<SidebarSkeleton/>}>
           <Sidebar/>
         </Suspense>

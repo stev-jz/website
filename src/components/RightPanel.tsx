@@ -44,7 +44,7 @@ function CompactView() {
   const textShadow = isLight ? 'drop-shadow-[0_1px_1px_rgba(0,0,0,0.25)]' : 'drop-shadow-[0_1px_1px_rgba(255,255,255,0.3)]';
 
   return (
-    <div className="w-full h-full flex flex-col items-center pt-[18vh] pb-10">
+    <div className="w-full h-full flex flex-col items-center pt-[18vh] pb-20">
       <div className="flex w-full">
         <div className="flex-1"></div>
         <div 
@@ -180,7 +180,7 @@ function CompactView() {
       </div>
       
       {/* Footer */}
-      <p className={`text-[13px] mt-8 mb-6 ${textMuted} ${textShadow} opacity-70 text-center transition-colors duration-300`}>
+      <p className={`text-[13px] mt-8 mb-16 ${textMuted} ${textShadow} opacity-70 text-center transition-colors duration-300`}>
         Designed in Figma, coded in VS Code, built with Next.js & Tailwind CSS, deployed on Vercel by Steven Zhang, 2026
       </p>
     </div>
@@ -188,14 +188,14 @@ function CompactView() {
 }
 
 export default function RightPanel(){
-  return(
-    <div
-      id="right-panel"
-      className="
-        container-type-inline flex flex-col items-center
-        lg:overflow-y-auto overflow-visible
-        lg:h-screen scroll-smooth
-        pb-[30vh] lg:pb-0
+    return(
+<div
+  id="right-panel"
+  className="
+    container-type-inline flex flex-col items-center
+    lg:overflow-y-auto overflow-visible
+    lg:h-screen scroll-smooth
+    pb-[30vh] lg:pb-0  
         lg:px-[clamp(3vw,5vw,6vw)]
       "
     >
@@ -206,12 +206,12 @@ export default function RightPanel(){
 
       {/* Original expanded view for mobile */}
       <div className="lg:hidden w-full">
-        <div className="lg:w-[clamp(30vw,80cqw,45vw)]">
-          <section id="about" className="min-h-[85vh] pt-[5vh]"><About/></section>
-          <section id="experience" className="min-h-[85vh] pt-[10vh]"><Experience/></section>
-          <section id="projects" className="min-h-[85vh] pt-[10vh]"><Projects/></section>
+  <div className="lg:w-[clamp(30vw,80cqw,45vw)]">
+    <section id="about" className="min-h-[85vh] pt-[5vh]"><About/></section>
+    <section id="experience" className="min-h-[85vh] pt-[10vh]"><Experience/></section>
+    <section id="projects" className="min-h-[85vh] pt-[10vh]"><Projects/></section>
         </div>
-      </div>
-    </div>
-  );
+  </div>
+</div>
+    );
 }
