@@ -60,7 +60,7 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
           <div className="flex-1 min-w-0">
             <h3 className={`
               w-full break-words
-              text-sm font-normal
+              text-[15px] font-normal
               ${textPrimary}
               ${hoverText}
               ${textShadow}
@@ -71,7 +71,7 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
             
             {props.date && (
               <div className="mt-0.5">
-                <span className={`text-[11px] font-normal ${textMuted} ${textShadow} transition-colors duration-200`}>
+                <span className={`text-[12px] font-normal ${textMuted} ${textShadow} transition-colors duration-200`}>
                   {props.date}
                 </span>
               </div>
@@ -101,7 +101,7 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
             `}
           >
             <div className="overflow-hidden">
-              <p className={`text-[11px] leading-relaxed ${textSecondary} ${textShadow} mb-2 transition-colors duration-200`}>
+              <p className={`text-[12px] leading-relaxed ${textSecondary} ${textShadow} mb-2 transition-colors duration-200`}>
                 {props.description}
                 {' '}
                 <a
@@ -124,7 +124,7 @@ export default function CompactExperienceItem(props: CompactExperienceItemProps)
                   {props.tags.map(tag => (
                     <li
                       key={tag}
-                      className="text-[10px] px-2 py-0.5 font-medium rounded-full bg-blue-950 text-blue-400"
+                      className="text-[11px] px-2 py-0.5 font-medium rounded-full bg-blue-950 text-blue-400"
                     >
                       {tag}
                     </li>

@@ -44,30 +44,82 @@ function CompactView() {
   const textShadow = isLight ? 'drop-shadow-[0_1px_1px_rgba(0,0,0,0.25)]' : 'drop-shadow-[0_1px_1px_rgba(255,255,255,0.3)]';
 
   return (
-    <div className="w-full h-full flex items-start pt-[18vh] pb-10">
-      <div className="flex-1"></div>
-      <div 
-        ref={containerRef}
-        className="
-          w-[clamp(45vw,55vw,60vw)]
-          rounded-2xl overflow-hidden
-          border-t border-t-white/30
-          bg-white/10 backdrop-blur-xl
-          shadow-[0_10px_20px_rgba(0,0,0,0.25)]
-          p-5
-          transition-colors duration-300
-        "
-      >
-        {/* Experience Section */}
-        <div className="mb-4">
-          <h2 className={`text-sm font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-2 px-1 transition-colors duration-300`}>
-            Experience
-          </h2>
-          <div className="flex flex-col -mx-1">
+    <div className="w-full h-full flex flex-col items-center pt-[18vh] pb-10">
+      <div className="flex w-full">
+        <div className="flex-1"></div>
+        <div 
+          ref={containerRef}
+          className="
+            w-[clamp(45vw,55vw,60vw)]
+            rounded-2xl overflow-hidden
+            border-t border-t-white/30
+            bg-white/10 backdrop-blur-xl
+            shadow-[0_10px_20px_rgba(0,0,0,0.25)]
+            p-6
+            transition-colors duration-300
+          "
+        >
+          {/* Projects Section */}
+          <div className="mb-6">
+            <h2 className={`text-[15px] font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-3 px-1 transition-colors duration-300`}>
+              Projects
+            </h2>
+            <div className="grid grid-cols-2 gap-3 items-start">
+            <CompactProjectItem
+              title="Tech Stack Crawler"
+              description="Scrapes tech job postings from GitHub and extracts tech stack information using AI."
+              link="https://github.com/stev-jz/tech-stack-crawler"
+              tags={["Python", "PostgreSQL", "Gemini API", "asyncio"]}
+              projectImage={<img src="/Crawler-png.png" className="w-full h-full object-cover" alt="Tech Stack Crawler" loading="lazy"/>}
+              textMode={textMode}
+            />
+            <CompactProjectItem
+              title="FPGA Dino Jump"
+              description="A 2D platformer game built on DE1-SoC FPGA with VGA display and custom game logic."
+              tags={["Verilog", "DE1-SoC FPGA", "ModelSim"]}
+              projectImage={<img src="/fpga-game.png" className="w-full h-full object-cover" alt="FPGA Dino Jump" loading="lazy"/>}
+              textMode={textMode}
+            />
+            <CompactProjectItem
+              title="Syllabus Tracker AI"
+              description="Dashboard to track course information. Uses AI to extract syllabus data from PDFs."
+              link="https://github.com/stev-jz/syllabus-tracker"
+              tags={["SQLite", "Prisma", "Next.js", "TypeScript", "Gemini API"]}
+              projectImage={<img src="/syllabus-tracker-image.png" className="w-full h-full object-cover" alt="Syllabus Tracker AI" loading="lazy"/>}
+              textMode={textMode}
+            />
+            <CompactProjectItem
+              title="Web Music Streamer"
+              description="Audio streaming app with YouTube-to-MP3 conversion and real-time playback controls."
+              link="https://github.com/stev-jz/WebWave"
+              tags={["TypeScript", "Next.js", "Supabase", "HTML5 Audio API"]}
+              projectImage={<img src="/WebWave.png" className="w-full h-full object-cover" alt="Web Music Streamer" loading="lazy"/>}
+              textMode={textMode}
+            />
+            <CompactProjectItem
+              title="Portfolio Website"
+              description="Responsive portfolio website with glassmorphism design."
+              link="https://github.com/stev-jz/website"
+              tags={["Next.js", "TypeScript", "Tailwind CSS", "React"]}
+              projectImage={<ThemeAwarePortfolioImage />}
+              textMode={textMode}
+            />
+          </div>
+          </div>
+
+          {/* Divider */}
+          <div className={`h-px bg-gradient-to-r from-transparent ${dividerVia} to-transparent my-6 transition-colors duration-300`} />
+
+          {/* Experience Section */}
+          <div className="mb-6">
+            <h2 className={`text-[15px] font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-3 px-1 transition-colors duration-300`}>
+              Experience
+            </h2>
+            <div className="flex flex-col -mx-1 space-y-1">
             <CompactExperienceItem
               date="SEPT 2025 — PRESENT"
               title={<>EWB UofT, <em>Web Developer Project Lead</em></>}
-              description="Project lead of a responsive multi-page food-info website using Next.js, React, and TypeScript aimed to serve 3000+ students at The University of Toronto. Integrated Google Maps API to display nearby food options and compute walking times, improving user navigation speed by ~40%. Achieved top 20 team in all of first-year engineering by authoring a 70+ page document outlining technical requirements to solve a real-world engineering problem."
+              description="Project lead for a Next.js food-info website serving students at University of Toronto. Integrated Google Maps API for location-based features."
               link="https://uoft.ewb.ca/"
               tags={["Next.js", "React", "TypeScript", "Google Maps API"]}
               projectImage={<img className="rounded-md size-full object-contain" src="/EWB-logo.png" alt="EWB logo" loading="lazy"/>}
@@ -76,7 +128,7 @@ function CompactView() {
             <CompactExperienceItem
               date="MAY — AUG 2025"
               title={<>Skynet Security System, <em>Software Developer</em></>}
-              description="Built a React and TypeScript admin dashboard to help staff track technician jobs, which made it easier for the team of 30+ employees to manage daily work without relying on manual updates. Set up JWT auth and a recurring invoice system with Node.js, Express, and Prisma, which cut the manual billing steps by roughly a third."
+              description="Built React admin dashboard for tracking technician jobs. Implemented JWT authentication and automated invoice system."
               link="https://www.skynetsystems.ca/"
               tags={["React", "TypeScript", "JWT", "Node.js", "Prisma"]}
               projectImage={<img src="/skynetlogo.png" className="size-full object-contain" alt="Skynet logo" loading="lazy"/>}
@@ -85,82 +137,52 @@ function CompactView() {
             <CompactExperienceItem
               date="JULY — AUG 2023"
               title={<>UBC Engineering Outreach, <em>Coding and ML Instructor</em></>}
-              description="Developed and delivered model-training ML Project tutorial and STEM activities in Python, using pandas and NumPy to enhance 30+ students' experience in basic ML concepts and coding skills through project-based learning."
+              description="Developed and delivered ML tutorials and STEM activities in Python using pandas and NumPy."
               link="https://geeringup.apsc.ubc.ca/"
               tags={["Python", "pandas", "NumPy"]}
               projectImage={<img src="/Geering-up-logo.png" className="size-full rounded-full object-contain" alt="Geering Up logo" loading="lazy"/>}
               textMode={textMode}
             />
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className={`h-px bg-gradient-to-r from-transparent ${dividerVia} to-transparent my-6 transition-colors duration-300`} />
+
+          {/* Skills Section */}
+          <div>
+            <h2 className={`text-[15px] font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-3 px-1 transition-colors duration-300`}>
+              Skills
+            </h2>
+            <div className="px-1 space-y-2">
+              {[
+                { label: "Languages", skills: ["C", "C++", "Python", "TypeScript", "JavaScript"] },
+                { label: "Full-Stack", skills: ["Next.js", "React", "REST APIs", "PostgreSQL", "Prisma", "Supabase"] },
+                { label: "Hardware", skills: ["Verilog", "DE1-SoC FPGA", "ModelSim", "Quartus Prime"] },
+                { label: "AI & Data", skills: ["Gemini API", "Whisper", "pandas", "NumPy"] },
+              ].map((category) => (
+                <div key={category.label} className="flex flex-wrap items-center gap-x-2 gap-y-1.5">
+                  <span className={`text-[11px] ${textMuted} ${textShadow} font-medium shrink-0 mr-0.5`}>{category.label}:</span>
+                  {category.skills.map((skill) => (
+                    <span 
+                      key={skill}
+                      className={`text-[11px] px-2 py-0.5 rounded-full ${isLight ? 'bg-white/15 text-white/80' : 'bg-white/30 text-gray-800'} ${textShadow} font-medium transition-colors duration-300`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-
-        {/* Divider */}
-        <div className={`h-px bg-gradient-to-r from-transparent ${dividerVia} to-transparent mb-4 transition-colors duration-300`} />
-
-        {/* Skills Section */}
-        <div className="mb-4">
-          <h2 className={`text-sm font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-2 px-1 transition-colors duration-300`}>
-            Skills
-          </h2>
-          <div className="px-1 space-y-1.5">
-            {[
-              { label: "Languages", skills: ["C", "C++", "Python", "TypeScript", "JavaScript"] },
-              { label: "Full-Stack", skills: ["Next.js", "React", "REST APIs", "PostgreSQL", "Prisma", "Supabase"] },
-              { label: "Hardware", skills: ["Verilog", "DE1-SoC FPGA", "ModelSim", "Quartus Prime"] },
-              { label: "AI & Data", skills: ["Gemini API", "Whisper", "pandas", "NumPy"] },
-            ].map((category) => (
-              <div key={category.label} className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
-                <span className={`text-[10px] ${textMuted} ${textShadow} font-medium shrink-0 mr-0.5`}>{category.label}:</span>
-                {category.skills.map((skill) => (
-                  <span 
-                    key={skill}
-                    className={`text-[10px] px-2 py-0.5 rounded-full ${isLight ? 'bg-white/15 text-white/80' : 'bg-white/30 text-gray-800'} ${textShadow} font-medium transition-colors duration-300`}
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className={`h-px bg-gradient-to-r from-transparent ${dividerVia} to-transparent mb-4 transition-colors duration-300`} />
-
-        {/* Projects Section */}
-        <div>
-          <h2 className={`text-sm font-normal uppercase tracking-wider ${textMuted} ${textShadow} mb-2 px-1 transition-colors duration-300`}>
-            Projects
-          </h2>
-          <div className="grid grid-cols-2 gap-2">
-            <CompactProjectItem
-              title="Syllabus Tracker AI"
-              description="A one stop, fullstack dashboard tool to track important course information (grading, exam dates, etc.). AI-powered using Gemini API to extract syllabus information from PDFs."
-              link="https://github.com/stev-jz/syllabus-tracker"
-              tags={["SQLite", "Prisma", "Next.js", "TypeScript", "Gemini API"]}
-              projectImage={<img src="/syllabus-tracker-image.png" className="w-full h-full object-cover" alt="Syllabus Tracker AI" loading="lazy"/>}
-              textMode={textMode}
-            />
-            <CompactProjectItem
-              title="Web Music Streamer"
-              description="A fullstack audio streamer in Next.js + Supabase. YouTube-to-MP3 conversion with real-time streaming and playback controls using HTML5 audio API."
-              link="https://github.com/stev-jz/WebWave"
-              tags={["TypeScript", "Next.js", "Supabase", "HTML5 Audio API"]}
-              projectImage={<img src="/WebWave.png" className="w-full h-full object-cover" alt="Web Music Streamer" loading="lazy"/>}
-              textMode={textMode}
-            />
-            <CompactProjectItem
-              title="Portfolio Website"
-              description="A responsive portfolio website built with Next.js and TypeScript, with iOS-inspired glassmorphism components."
-              link="https://github.com/stev-jz/website"
-              tags={["Next.js", "TypeScript", "Tailwind CSS", "React"]}
-              projectImage={<ThemeAwarePortfolioImage />}
-              textMode={textMode}
-            />
-          </div>
-        </div>
+        <div className="flex-1"></div>
       </div>
-      <div className="flex-1"></div>
+      
+      {/* Footer */}
+      <p className={`text-[13px] mt-8 mb-6 ${textMuted} ${textShadow} opacity-70 text-center transition-colors duration-300`}>
+        Designed in Figma, coded in VS Code, built with Next.js & Tailwind CSS, deployed on Vercel by Steven Zhang, 2026
+      </p>
     </div>
   );
 }

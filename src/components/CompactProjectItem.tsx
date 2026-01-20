@@ -37,6 +37,9 @@ export default function CompactProjectItem(props: CompactProjectItemProps) {
         ${hoverBg}
         focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/60
         flex flex-col
+        px-2
+        pb-3
+        self-start
       `}
     >
       {/* Project Image */}
@@ -50,7 +53,7 @@ export default function CompactProjectItem(props: CompactProjectItemProps) {
       <div className="flex items-start gap-2 mt-2 px-1">
         <h3 className={`
           flex-1 min-w-0 break-words
-          text-sm font-normal
+          text-[15px] font-normal
           ${textPrimary}
           ${hoverText}
           ${textShadow}
@@ -82,7 +85,7 @@ export default function CompactProjectItem(props: CompactProjectItemProps) {
           `}
         >
           <div className="overflow-hidden">
-            <p className={`text-[11px] leading-relaxed ${textSecondary} ${textShadow} mb-2 transition-colors duration-200`}>
+            <p className={`text-[12px] leading-relaxed ${textSecondary} ${textShadow} mb-2 transition-colors duration-200`}>
               {props.description}
               {' '}
               <a
@@ -105,7 +108,7 @@ export default function CompactProjectItem(props: CompactProjectItemProps) {
                 {props.tags.map(tag => (
                   <li
                     key={tag}
-                    className="text-[10px] px-2 py-0.5 font-medium rounded-full bg-blue-950 text-blue-400"
+                    className="text-[11px] px-2 py-0.5 font-medium rounded-full bg-blue-950 text-blue-400"
                   >
                     {tag}
                   </li>

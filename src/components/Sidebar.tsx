@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import IconList from '@/components/Iconlist'
-import ThemeToggle from '@/theme/theme-toggle'
 
 export default function Sidebar(){
     return(
@@ -25,10 +24,6 @@ export default function Sidebar(){
                 </div>
             </div>
             
-            {/* Theme Toggle - Bottom left on desktop */}
-            <div className="lg:pl-0 lg:pb-8 max-lg:hidden">
-              <ThemeToggle />
-            </div>
         </aside>
         
     )
