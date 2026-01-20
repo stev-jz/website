@@ -1,5 +1,4 @@
 import GlassContainer from "@/components/GlassContainer"
-import Link from "next/link"
 
 export default function Experience(){
     return(

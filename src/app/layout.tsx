@@ -2,7 +2,6 @@ import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from "next";
 import { Inter } from 'next/font/google';
 import "./globals.css";
-import Sidebar from "@/components/Sidebar";
 import ThemeProvider from "@/theme/theme-provider";
 import ThemeToggle from "@/theme/theme-toggle";
 import Navbar from "@/components/Navbar";
